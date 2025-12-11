@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import Image from "next/image";
 
 
 export function Hero() {
@@ -53,9 +54,13 @@ export function Hero() {
                         {/* Using a placeholder service or a local placeholder asset if available. 
                  Since I don't have the user's specific image, I'll use a style-neutral placeholder 
                  or a colored block for now. */}
-                        <div className="w-full h-full bg-neutral-900 border border-white/10 flex items-center justify-center text-neutral-600">
-                            <span className="text-sm">Hero Image Placeholder</span>
-                        </div>
+                        <Image
+                            src="/hero-image.png"
+                            alt="Leonardo De Murtas"
+                            fill
+                            className="object-cover object-center"
+                            priority
+                        />
                         {/* If the user had an image, we would use <Image src="..." /> here */}
                     </div>
                 </div>
