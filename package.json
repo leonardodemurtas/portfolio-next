@@ -11,10 +11,11 @@
   "dependencies": {
     "next": "16.0.8",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "react-markdown": "^10.1.0"
   },
   "engines": {
-  "node": "22.x"
+    "node": "22.x"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

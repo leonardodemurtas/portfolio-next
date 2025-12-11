@@ -1,13 +1,17 @@
 import { Hero } from "./components/Hero";
-import { Clients } from "./components/Clients";
-import { RecentWorks } from "./components/RecentWorks";
+import { SectionAbout } from "./components/SectionAbout";
+import { FeaturedProjects } from "./components/FeaturedProjects";
+import { SectionArchive } from "./components/SectionArchive";
+import { SectionTraining } from "./components/SectionTraining";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Clients />
-      <RecentWorks />
+      <SectionAbout />
+      <FeaturedProjects />
+      <SectionArchive />
+      <SectionTraining />
     </>
   );
 }

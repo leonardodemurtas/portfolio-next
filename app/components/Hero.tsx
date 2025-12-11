@@ -9,26 +9,36 @@ export function Hero() {
             <div className="flex-1 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <div className="space-y-4">
                     <p className="text-neutral-400 text-lg flex items-center gap-2">
-                        Hello there <span className="text-yellow-400">👋</span>
+                        AI Product Designer (UX/UI)
                     </p>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
-                        I'm, Kanivalan
+                        Leonardo.
                         <br />
-                        <span className="text-neutral-400 font-normal">Product Designer</span>
+                        <span className="text-neutral-400 font-normal text-3xl md:text-5xl block mt-2">
+                            10+ years’ hands-on experience by building design systems and decision tools.
+                        </span>
                     </h1>
                 </div>
 
-                <p className="max-w-md text-lg text-neutral-400 leading-relaxed md:text-xl">
-                    More than 6 years of experience designing high-quality products for businesses.
+                <p className="max-w-xl text-lg text-neutral-400 leading-relaxed md:text-xl">
+                    I build reusable patterns into design systems and pair them with AI tools that speed research, guide decisions, and surface key insights. Seven products shipped.
                 </p>
 
-                <div className="pt-4">
-                    <Link
-                        href="/contact"
+                <div className="pt-4 flex flex-wrap gap-4">
+                    <a
+                        href="mailto:demurtasleonardo@gmail.com"
                         className="inline-block rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-white transition hover:bg-opacity-90 hover:scale-105 shadow-[0_0_20px_rgba(91,77,255,0.3)]"
                     >
-                        Send Inquiry
-                    </Link>
+                        Email Me
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/leonardodemurtas"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block rounded-full border border-white/20 bg-transparent px-8 py-3.5 text-base font-semibold text-white transition hover:bg-white/10"
+                    >
+                        LinkedIn
+                    </a>
                 </div>
             </div>
 

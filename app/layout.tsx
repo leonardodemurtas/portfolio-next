@@ -19,13 +19,7 @@ export const metadata: Metadata = {
     "AI design systems, decision tools, and patterns for risk & credit.",
 };
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/ai-patterns-writing", label: "AI Patterns & Writing" },
-  { href: "/mentoring-training", label: "Mentoring & Training" },
-  { href: "/archive", label: "Archive" },
-];
+
 
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -36,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

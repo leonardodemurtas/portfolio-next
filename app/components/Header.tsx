@@ -2,9 +2,10 @@
 import Link from "next/link";
 
 const navLinks = [
-    { href: "/works", label: "Works" },
-    { href: "/about", label: "About Me" },
-    { href: "/contact", label: "Contact" },
+    { href: "/#about", label: "About" },
+    { href: "/#featured", label: "Featured" },
+    { href: "/archive", label: "Archive" },
+    { href: "/training", label: "Training" },
 ];
 
 export function Header() {
@@ -13,11 +14,9 @@ export function Header() {
             <div className="mx-auto max-w-7xl flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <span className="text-xl font-bold italic tracking-tighter text-white">
-                        kanivalan
+                    <span className="text-xl font-bold tracking-tighter text-white">
+                        Leonardo.
                     </span>
-                    {/* Placeholder for the emoji/icon */}
-                    <span className="text-xl">🦜</span>
                 </Link>
 
                 {/* Navigation - Centered on desktop, hidden on mobile for now */}
