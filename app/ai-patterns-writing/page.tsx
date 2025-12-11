@@ -17,7 +17,7 @@ export default function AiPatternsWritingPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-2">
-        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-700">
           AI Patterns & Writing
         </p>
         <h1 className="text-3xl font-semibold text-neutral-900">
@@ -39,7 +39,7 @@ export default function AiPatternsWritingPage() {
               {item.title}
             </h2>
             <p className="text-sm text-neutral-600">{item.description}</p>
-            <span className="text-sm text-neutral-500">Link coming soon</span>
+            <span className="text-sm text-neutral-700">Link coming soon</span>
           </article>
         ))}
       </section>

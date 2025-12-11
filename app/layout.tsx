@@ -57,7 +57,7 @@ export default function RootLayout({
             </div>
           </header>
           <main className="mx-auto max-w-5xl px-6 py-12">{children}</main>
-          <footer className="mx-auto max-w-5xl px-6 pb-12 pt-8 text-sm text-neutral-500">
+          <footer className="mx-auto max-w-5xl px-6 pb-12 pt-8 text-sm text-neutral-700">
             AI Product Designer · Design systems · Decision tools · Risk & credit
           </footer>
         </div>

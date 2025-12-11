@@ -13,7 +13,7 @@ export default function CaseStudiesPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-2">
-        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-700">
           Case Studies
         </p>
         <h1 className="text-3xl font-semibold text-neutral-900">

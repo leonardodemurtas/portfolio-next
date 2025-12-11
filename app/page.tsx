@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="space-y-10">
       <section className="space-y-4">
-        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-700">
           AI Product Designer (UX/UI)
         </p>
         <h1 className="text-3xl font-semibold leading-tight tracking-tight text-neutral-900">
@@ -64,7 +64,7 @@ export default function Home() {
             key={item.label}
             className="flex min-w-[160px] flex-col rounded-lg bg-neutral-50 px-4 py-3"
           >
-            <span className="text-sm text-neutral-500">{item.label}</span>
+            <span className="text-sm text-neutral-700">{item.label}</span>
             <span className="text-lg font-semibold text-neutral-900">
               {item.value}
             </span>

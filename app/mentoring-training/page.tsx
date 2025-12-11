@@ -25,7 +25,7 @@ export default function MentoringTrainingPage() {
   return (
     <div className="space-y-8">
       <header className="space-y-2">
-        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-700">
           Mentoring & Training
         </p>
         <h1 className="text-3xl font-semibold text-neutral-900">
@@ -52,7 +52,7 @@ export default function MentoringTrainingPage() {
               </span>
             </div>
             <p className="text-sm text-neutral-600">{pill.blurb}</p>
-            <span className="text-sm text-neutral-500">Details coming soon</span>
+            <span className="text-sm text-neutral-700">Details coming soon</span>
           </article>
         ))}
       </section>
