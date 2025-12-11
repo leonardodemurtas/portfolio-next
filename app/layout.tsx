@@ -27,6 +27,9 @@ const navLinks = [
   { href: "/archive", label: "Archive" },
 ];
 
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,31 +38,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-50 text-neutral-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="min-h-screen">
-          <header className="border-b border-neutral-200 bg-white/70 backdrop-blur">
-            <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-              <Link href="/" className="text-base font-semibold tracking-tight">
-                Leonardo De Murtas
-              </Link>
-              <nav className="flex flex-wrap gap-4 text-sm font-medium text-neutral-700">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="rounded-md px-2 py-1 transition hover:bg-neutral-100"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </header>
-          <main className="mx-auto max-w-5xl px-6 py-12">{children}</main>
-          <footer className="mx-auto max-w-5xl px-6 pb-12 pt-8 text-sm text-neutral-700">
-            AI Product Designer · Design systems · Decision tools · Risk & credit
-          </footer>
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
         </div>
       </body>
     </html>
