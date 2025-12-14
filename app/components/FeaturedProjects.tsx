@@ -1,41 +1,55 @@
-import Link from "next/link";
 
-const featured = [
-    {
-        title: "Design System",
-        description: "Product design / UX (2023–2024)",
-        link: "/featured/design-system",
-        tags: "Design System",
-    },
-    {
-        title: "Credit Portfolio Monitoring",
-        description: "Product design / UX / Interaction design / UI (2023)",
-        link: "/featured/credit-portfolio-monitoring",
-        tags: "Fintech",
-    },
-];
+import Link from "next/link";
+import Image from "next/image";
+import { featuredProjects } from "../data/projects";
 
 export function FeaturedProjects() {
     return (
-        <section id="featured" className="py-20 px-6 max-w-7xl mx-auto">
-            <h2 className="text-3xl font-medium mb-12">Featured Projects</h2>
-            <div className="space-y-12">
-                {featured.map((project, idx) => (
-                    <div key={idx} className="group relative rounded-3xl bg-[#0A0A0A] border border-white/5 overflow-hidden hover:border-white/10 transition-colors">
-                        <div className="flex flex-col md:flex-row min-h-[400px]">
-                            <div className="flex-1 p-10 flex flex-col justify-center space-y-6">
-                                <span className="text-sm text-neutral-400">{project.tags}</span>
-                                <h3 className="text-4xl font-medium text-white">{project.title}</h3>
-                                <p className="text-neutral-400 text-lg">{project.description}</p>
-                                <Link href={project.link} className="inline-block mt-4 text-white hover:text-accent font-medium">
-                                    View Project →
-                                </Link>
-                            </div>
-                            <div className="flex-1 bg-gradient-to-br from-neutral-800 to-neutral-900">
-                                {/* Image Placeholder */}
+        <section id="featured" className="py-20 md:py-32 px-6 md:px-12 max-w-[90rem] mx-auto relative">
+            {/* Heading */}
+            <div className="flex justify-center mb-12 md:mb-20">
+                <h2 className="text-[12vw] md:text-[10rem] font-thin text-neutral-900/5 tracking-tight leading-[0.8] select-none">
+                    PROJECTS
+                </h2>
+            </div>
+
+            <div className="space-y-8 md:space-y-16">
+                {featuredProjects.map((project, idx) => (
+                    <Link
+                        key={project.slug}
+                        href={`/featured/${project.slug}`}
+                        className="group relative block w-full aspect-[4/3] md:aspect-[2.35/1] rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
+                    >
+                        {/* Background Image */}
+                        <div className="absolute inset-0 bg-neutral-900">
+                            {project.cardImage && (
+                                <Image
+                                    src={project.cardImage}
+                                    alt={project.title}
+                                    fill
+                                    className="object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, 90vw"
+                                    priority={idx === 0}
+                                />
+                            )}
+                        </div>
+
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-500" />
+
+                        {/* Content */}
+                        <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end items-start">
+                            <div className="max-w-2xl space-y-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 className="text-3xl md:text-5xl font-medium text-white leading-tight drop-shadow-sm">
+                                    {project.cardHeadline || project.title}
+                                </h3>
+
+                                <div className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-medium tracking-wide group-hover:bg-white group-hover:text-black hover:border-white transition-all duration-300">
+                                    View work
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

@@ -8,6 +8,8 @@ export interface Project {
     title: string;
     role: string;
     period?: string;
+    cardHeadline?: string;
+    cardImage?: string;
     sections: ProjectSection[];
 }
 
@@ -17,6 +19,8 @@ export const featuredProjects: Project[] = [
         title: "Design System for Enterprise Risk",
         role: "Product design, UX",
         period: "2023–2024",
+        cardHeadline: "Boosting speed and consistency",
+        cardImage: "/case-study-car.png",
         sections: [
             {
                 title: "Why we needed a change",
@@ -77,6 +81,8 @@ To manage the work, we set up Jira boards for tasks, Storybook for living docume
         title: "Credit Portfolio Monitoring",
         role: "Product design, UX, Interaction design, UI",
         period: "2023",
+        cardHeadline: "Turning user research into a new concept that unblocked progress.",
+        cardImage: "/case-study-office.png",
         sections: [
             {
                 title: "Task",

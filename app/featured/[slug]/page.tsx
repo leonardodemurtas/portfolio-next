@@ -23,15 +23,15 @@ export default async function FeaturedProjectPage({
     return (
         <div className="container mx-auto py-20 px-6 max-w-4xl">
             <div className="mb-12">
-                <p className="text-neutral-400 text-lg mb-2">{project.role} {project.period && `• ${project.period}`}</p>
-                <h1 className="text-4xl md:text-6xl font-bold mb-8">{project.title}</h1>
+                <p className="text-neutral-500 text-lg mb-2">{project.role} {project.period && `• ${project.period}`}</p>
+                <h1 className="text-4xl md:text-6xl font-bold mb-8 text-foreground">{project.title}</h1>
             </div>
 
             <div className="space-y-12">
                 {project.sections.map((section, idx) => (
                     <div key={idx} className="space-y-4">
-                        <h2 className="text-2xl font-bold text-white">{section.title}</h2>
-                        <div className="prose prose-invert prose-lg max-w-none text-neutral-300">
+                        <h2 className="text-2xl font-bold text-foreground">{section.title}</h2>
+                        <div className="prose prose-lg max-w-none text-neutral-600">
                             <ReactMarkdown>{section.content}</ReactMarkdown>
                         </div>
                     </div>
