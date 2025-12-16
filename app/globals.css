@@ -1,65 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Palette Guide */
-  --background: #F8FAFC;
-  /* Soft White/Grey */
-  --foreground: #1F201F;
-  /* Brand Text */
-
-  /* Brand Colors */
-  --brand-surface: #B2C7AD;
-  /* Greenish Surface */
-  --brand-ancient: #DBC5C2;
-  /* Pinkish/Beige Accent */
-
-  /* Ink / Interactive */
-  --ink-primary: #49695B;
-  /* Primary Action */
-  --ink-darker: #355244;
-  /* Secondary Action */
-  --ink-extra: #2F4B3D;
-  /* Deep Footer BG */
-
-  /* Map generic accents to new brand colors if needed for backward compatibility or updating */
-  --accent: var(--ink-primary);
-  --accent-beige: var(--brand-ancient);
-  --accent-sage: var(--brand-surface);
-  --accent-lavender: #E2E8F0;
-  /* Fallback/Neutral for lavender if not strictly in palette, or map to ancient */
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  --color-brand-surface: var(--brand-surface);
-  --color-brand-ancient: var(--brand-ancient);
-
-  --color-ink-primary: var(--ink-primary);
-  --color-ink-darker: var(--ink-darker);
-  --color-ink-extra: var(--ink-extra);
-
-  --color-accent: var(--accent);
-  --color-accent-beige: var(--accent-beige);
-  --color-accent-sage: var(--accent-sage);
-  --color-accent-lavender: var(--accent-lavender);
-
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Custom utilities if needed */
-.glass-panel {
-  background: rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: Arial, Helvetica, sans-serif;
 }
