@@ -22,7 +22,7 @@ export default function DesignSystemPage() {
                     />
                 </div>
 
-                <div className="relative z-20 h-full max-w-[90rem] mx-auto px-6 md:px-12 flex items-end justify-start">
+                <div className="relative z-20 w-full flex items-end justify-start h-full px-6 md:px-12">
                     <div className="max-w-4xl">
                         <h1 className={`${inter.className} text-[52px] font-bold tracking-tight leading-[0.9] mb-8`} style={{ fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif' }}>
                             Ship enterprise-grade
@@ -34,20 +34,19 @@ export default function DesignSystemPage() {
             </section>
 
             {/* 2. Intro & Stats Section - Dark Theme */}
-            <section className="relative bg-[#040B16] text-white py-20 md:py-32 px-6 md:px-12 text-center flex flex-col justify-end items-center w-full overflow-hidden">
-                <div className="absolute inset-0 z-0">
-                    <Image
+            <section className="relative bg-[#040B16] text-white py-8 px-6 md:px-12 text-center flex flex-col justify-end items-center w-full overflow-hidden gap-[204px] h-fit">
+                <div className="absolute inset-0 z-0 w-full flex flex-col justify-end items-center">
+                    <img
                         src="/design-system/Goal-2.png"
                         alt="Background"
-                        fill
                         className="object-cover opacity-100"
-                        priority
+                        style={{ width: 'fit-content' }}
                     />
                     <div className="absolute inset-0 bg-[#040B16]/30" />
                 </div>
                 
-                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full">
-                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start">
+                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full justify-start gap-6 items-center">
+                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pb-[230px]">
                         <p className="text-xl md:text-2xl leading-relaxed text-neutral-300 w-full">
                             In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
                         </p>
@@ -59,13 +58,13 @@ export default function DesignSystemPage() {
                         <p className="text-lg text-neutral-400">
                             We needed a unified design system to reduce rework and create a consistent, trustworthy experience.
                         </p>
-                        <p className="text-lg text-neutral-400">
-                           I'm super proud of what we created.
+                        <p className="text-lg text-neutral-400 w-full">
+                            I'm super proud of what we created.
                         </p>
                     </div>
 
-                    <div className="space-y-8 max-w-[610px] text-left">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-left w-fit">
+                    <div className="space-y-8 max-w-[610px] text-left w-full mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-left w-full">
                             One system.
                             <br />
                             Many brands.
@@ -79,22 +78,22 @@ export default function DesignSystemPage() {
                             <div className="flex flex-col w-full">
                                 <div className="flex flex-row w-full gap-12">
                                     {/* Stat 1 */}
-                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px] text-left">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">7</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Products Adopted</div>
                                     </div>
                                     {/* Stat 2 */}
-                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px] text-left">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">95%</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Code match (parity)</div>
                                     </div>
                                     {/* Stat 3 */}
-                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px] text-left">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">70%</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Faster development</div>
                                     </div>
                                     {/* Stat 4 */}
-                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px] text-left">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">50%</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Less design rework</div>
                                     </div>
@@ -103,7 +102,7 @@ export default function DesignSystemPage() {
                         </div>
                     </div>
 
-                    <div className="space-y-8 max-w-[610px] text-left">
+                    <div className="space-y-8 max-w-[610px] text-left mt-12">
                         <p className="text-lga leading-relaxed text-neutral-400">
                             CPM and Finbox were the first products to ship on the new design system. I led design on CPM and used it to harden patterns, starting with the dashboard template. The templates and color system now anchor delivery and improve UX across teams.
                         </p>
@@ -364,4 +363,3 @@ export default function DesignSystemPage() {
         </div>
     );
 }
-
