@@ -45,8 +45,8 @@ export default function DesignSystemPage() {
                     <div className="absolute inset-0 bg-[#040B16]/30" />
                 </div>
                 
-                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full justify-start gap-6 items-center">
-                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pt-12 pb-[163px]">
+                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full justify-start gap-4 items-center pt-12">
+                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pb-[163px]">
                         <p className="text-xl md:text-2xl leading-relaxed text-neutral-300 w-full">
                             In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
                         </p>
@@ -113,7 +113,7 @@ export default function DesignSystemPage() {
 
             {/* 3. Shaping the system - Light Theme */}
             <section className="bg-[#fcfbf9] text-neutral-900 py-20 md:py-32 px-6 md:px-12">
-                <div className="max-w-[90rem] mx-auto space-y-24">
+                <div className="max-w-[90rem] mx-auto space-y-24 flex flex-col justify-start items-center">
                     {/* Header */}
                     <div className="max-w-3xl">
                         <h2 className="text-3xl md:text-4xl font-medium mb-6">Shaping the design system</h2>
@@ -125,7 +125,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Laying the groundwork */}
-                    <div className="bg-[#f0ede6] rounded-3xl flex max-w-[1200px] py-14 px-0 flex-col items-center gap-8 self-stretch">
+                    <div className="bg-[#f0ede6] rounded-3xl p-12 md:p-16">
                         <h3 className="text-2xl font-medium mb-12">Laying the groundwork</h3>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
