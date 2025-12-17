@@ -254,8 +254,11 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Micro reusable decisions */}
-                    <div className="space-y-12">
-                    
+                    <div className="bg-[#5A9DD13D] px-12 pt-20 pb-12 rounded-3xl space-y-12 max-w-[1200px] p-0 pt-8 mb-16 w-full">
+                    <h3 className="text-3xl px-12 font-medium mb-8 text-[#1e1b4b]">Token-driven building blocks</h3>
+                        <p className="max-w-3xl px-12 text-lg text-neutral-900 mb-12">
+                        Components are the UI’s building blocks. To make them read the same in light and dark, we tuned not just color but elevation, shadows, strokes, and focus states. Shadows are crisper in light and softer in dark to keep hierarchy without glare. Tokens drive these rules, so components stay consistent across modes without per-component overrides.
+                        </p>
 
                         {/* Carousel 1: Components */}
                         <div className="py-8">
