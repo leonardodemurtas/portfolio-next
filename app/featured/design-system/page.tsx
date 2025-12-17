@@ -125,7 +125,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Laying the groundwork */}
-                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] p-12 ">
+                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] w-full p-12 ">
                         <h3 className="text-2xl font-medium mb-12">Laying the groundwork</h3>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 w-full">
@@ -176,7 +176,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Principles */}
-                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] p-12">
+                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] w-full p-12">
                         <h3 className="text-2xl font-medium mb-12 text-[#1a4d42]">The rules that made decisions faster</h3>
                         <p className="max-w-3xl text-lg text-[#2c5e53] mb-12">
                             To guide our component choices, we established three core principles.
@@ -206,7 +206,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Building the system backbone */}
-                    <div className="space-y-12 max-w-[1200px] p-12">
+                    <div className="space-y-12 max-w-[1200px] p-12 w-full">
                         <div className="max-w-3xl">
                             <h3 className="text-3xl font-medium mb-6">Building the system backbone</h3>
                             <p className="text-lg text-neutral-600">
