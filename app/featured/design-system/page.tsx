@@ -37,7 +37,7 @@ export default function DesignSystemPage() {
             <section className="bg-[#040B16] text-white py-20 md:py-32 px-6 md:px-12 text-center">
                 <div className="max-w-[90rem] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32">
-                        <div className="space-y-8">
+                        <div className="space-y-8 flex flex-col items-start text-left md:w-[1636px] md:pt-[140px] md:pr-[513px] md:pb-0 md:pl-[513px]">
                             <p className="text-xl md:text-2xl leading-relaxed text-neutral-300">
                                 In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
                             </p>
