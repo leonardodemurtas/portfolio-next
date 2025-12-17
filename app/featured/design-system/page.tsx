@@ -153,23 +153,21 @@ export default function DesignSystemPage() {
                             </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                            <div className="bg-[#e8e4db] p-8 rounded-2xl flex items-start gap-6">
-                                <Image src="/design-system/logo-material.png" alt="Material" width={48} height={48} className="shrink-0" />
+                        <div className="flex flex-row gap-6">
+                            <div className="bg-[#e8e4db] w-full p-8 rounded-2xl flex flex-col justify-between transition-colors hover:bg-[#e8e4db]">
+                                <div className="w-full flex justify-center items-center mb-6">
+                                    <Image src="/design-system/img-1.png" alt="Material" width={160} height={180} className="" />
+                                </div>
                                 <div>
-                                    <h4 className="font-bold mb-2">Material Design familiarity reduces learning curve</h4>
-                                    <p className="text-neutral-600">Users were already accustomed to Material guidelines, which reduced the cognitive load.</p>
+                                    <h4 className="text-xl font-semibold mb-2">Material Design familiarity reduces learning curve</h4>
                                 </div>
                             </div>
-                            <div className="bg-[#e8e4db] p-8 rounded-2xl flex items-start gap-6">
-                                <div className="w-12 h-12 flex items-center justify-center">
-                                    <svg className="w-8 h-8 text-neutral-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                                    </svg>
+                            <div className="bg-[#e8e4db] p-8 rounded-2xl w-full flex flex-col gap-6">
+                                <div className="w-full flex justify-center items-center mb-6">
+                                    <Image src="/design-system/img-2.png" alt="Material" width={200} height={180} className="" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold mb-2">Accelerated scope of flexibility a common language across teams</h4>
-                                    <p className="text-neutral-600">Its component library allowed us to move quickly while maintaining a polished look.</p>
+                                    <h4 className="text-xl font-semibold mb-2">Accelerated scope of flexibility a common language across teams</h4>
                                 </div>
                             </div>
                         </div>
