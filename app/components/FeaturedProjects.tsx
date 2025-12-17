@@ -8,7 +8,7 @@ export function FeaturedProjects() {
         <section id="featured" className="py-20 md:py-32 px-6 md:px-12 max-w-[90rem] mx-auto relative">
             {/* Heading */}
             <div className="flex justify-center mb-12 md:mb-20">
-                <h2 className="text-[12vw] md:text-[10rem] font-thin text-neutral-900/5 tracking-tight leading-[0.8] select-none">
+                <h2 className="text-[12vw] md:text-[10rem] font-thin text-neutral-900/5 tracking-tight leading-[0.8] select-none w-full">
                     PROJECTS
                 </h2>
             </div>
