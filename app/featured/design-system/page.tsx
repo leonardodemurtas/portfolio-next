@@ -177,83 +177,77 @@ export default function DesignSystemPage() {
 
                     {/* Principles */}
                     <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] w-full p-12">
-                        <h3 className="text-2xl font-medium mb-12 text-[#1a4d42]">The rules that made decisions faster</h3>
-                        <p className="max-w-3xl text-lg text-[#2c5e53] mb-12">
+                        <h3 className="text-3xl font-semibold leading-tight pb-6 text-[#1a4d42]">The rules that made decisions faster</h3>
+                        <p className="max-w-3xl text-lg text-neutral-600 mb-12">
                             To guide our component choices, we established three core principles.
                             Whenever we had a debate, we returned to these:
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div className=" p-8 rounded-xl min-h-[200px] flex flex-col justify-between ">
-                                <div className="w-12 h-12 border-2 border-[#1a4d42] rounded-full flex items-center justify-center mb-4">
-                                    <span className="text-2xl">⚡️</span>
-                                </div>
+                        <div className="flex flex-row gap-6 w-full">
+                            <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col left-align justify-between transition-colors hover:bg-[#bce0d8]">
+                                <Image src="/design-system/img-05.png" alt="Don't Make Me Think" width={280} height={140} className="w-full" />
                                 <h4 className="text-xl font-bold text-[#1a4d42]">Don't Make Me Think</h4>
                             </div>
-                            <div className="bg-[#cce3de] p-8 rounded-xl min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
-                                <div className="w-12 h-12 border-2 border-[#1a4d42] rounded-full flex items-center justify-center mb-4">
-                                    <span className="text-2xl">🛠️</span>
-                                </div>
+                            <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
+                                <Image src="/design-system/img-04.png" alt="Help the User to Get It Done" width={280} height={140} className="w-full" />
                                 <h4 className="text-xl font-bold text-[#1a4d42]">Help the User to Get It Done</h4>
                             </div>
-                            <div className="bg-[#cce3de] p-8 rounded-xl min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
-                                <div className="w-12 h-12 border-2 border-[#1a4d42] rounded-full flex items-center justify-center mb-4">
-                                    <span className="text-2xl">👆</span>
-                                </div>
+                            <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
+                                <Image src="/design-system/img-03.png" alt="One click away" width={280} height={140} className="w-full" />
                                 <h4 className="text-xl font-bold text-[#1a4d42]">One click away</h4>
                             </div>
                         </div>
                     </div>
 
                     {/* Building the system backbone */}
-                    <div className="bg-[#EFEEEF] rounded-3xl space-y-12 max-w-[1200px] p-12 w-full">
-                        <div className="flex flex-col gap-6">
-                        <div className="max-w-3xl">
-                            <h3 className="text-3xl font-medium mb-6">Micro reusable decisions (Tokens & Components)</h3>
-                            <p className="text-lg text-neutral-600 mb-8">
-                                Tokens are the atoms. We standardized the spacing scale (4px baseline),
-                                typography (Inter), and semantic colors for risk levels (critical, warning, safe).
-                                These tokens feed into our atomic components.
-                            </p>
+                    <div className="bg-[#CBCADE3D] rounded-3xl space-y-12 max-w-[1200px] p-0 w-full">
+                        
+                        <div className="flex flex-col gap-0">
+                            
+                            <div className="p-12 px-24 pb-0">
+                                <h3 className="text-3xl text-neutral-900 font-semibold leading-tight mb-6 ">Micro reusable decisions (Tokens & Components)</h3>
+                                <p className="text-lg text-neutral-600 mb-8">
+                                    Tokens are the atoms. We standardized the spacing scale (4px baseline),
+                                    typography (Inter), and semantic colors for risk levels (critical, warning, safe).
+                                    These tokens feed into our atomic components.
+                                </p>
+                            </div>
+                        
+                            <div className=" pt-6 px-24 pb-12">
+                                <h3 className="text-2xl text-neutral-900 font-semibold leading-tight mb-6">Building the system backbone</h3>
+                                <p className="text-lg text-neutral-600">
+                                    I defined the architecture starting from Tokens (colors, spacing, elevation)
+                                    up to Templates. We used Figma Variables to manage themes (Light/Dark)
+                                    and density.
+                                </p>
+                            </div>
+                        
+                            <div className="full-width flex flex-row gap-[1px] rounded-none">
+                                {/* Token Image */}
+                                <div className="overflow-hidden shadow-2xl border border-white/10 bg-[#1e1e1e] w-[50%] rounded-r-none">
+                                    <Image 
+                                        src="/design-system/tokens-2.png" 
+                                        alt="Design Tokens Interface" 
+                                        width={1400} 
+                                        height={800} 
+                                        className="w-full h-auto"
+                                    />
+                                </div>
+                                {/* Tokens Static Image */}
+                                <div className="overflow-hidden shadow-lg border border-white/10 bg-[#0d1117] w-[50%] rounded-l-none">
+                                    <Image 
+                                        src="/design-system/tokens-1.png" 
+                                        alt="Color Tokens" 
+                                        width={1200} 
+                                        height={800} 
+                                        className="w-full h-auto"
+                                    />
+                                </div>
+                            </div>                        
                         </div>
 
-                        
-                        <div className="max-w-3xl">
-                            <h3 className="text-3xl font-medium mb-6">Building the system backbone</h3>
-                            <p className="text-lg text-neutral-600">
-                                I defined the architecture starting from Tokens (colors, spacing, elevation)
-                                up to Templates. We used Figma Variables to manage themes (Light/Dark)
-                                and density.
-                            </p>
-                        </div>
-                        
-                        <div className="full-width flex flex-col gap-6">
-                            {/* Token Image */}
-                            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-[#1e1e1e] w-full">
-                                <Image 
-                                    src="/design-system/tokens-2.png" 
-                                    alt="Design Tokens Interface" 
-                                    width={1400} 
-                                    height={800} 
-                                    className="w-full h-auto"
-                                />
-                            </div>
-                            {/* Tokens Static Image */}
-                            <div className="rounded-3xl overflow-hidden shadow-lg border border-white/10 bg-[#0d1117] mb-12">
-                                <Image 
-                                    src="/design-system/tokens-1.png" 
-                                    alt="Color Tokens" 
-                                    width={1200} 
-                                    height={800} 
-                                    className="w-full h-auto"
-                                />
-                            </div>
-                        </div>
-                        
-                        </div>
-
-                        <p className="text-sm text-neutral-500 text-center italic">
-                            The system supports multi-brand theming through primitive and semantic tokens.
+                        <p className="px-24 pb-16 pt-0 text-lg text-neutral-500 text-center italic">
+                        The token system is organized as Figma variable collections for implementation and review. Figma variable collections cover color roles and states, spacing, typography, radius, elevation, borders and opacity, motion, breakpoints and grid, and icon sizes. One token change cascades through components, modes, and brands in minutes.
                         </p>
 
 
