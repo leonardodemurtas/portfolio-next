@@ -34,9 +34,19 @@ export default function DesignSystemPage() {
             </section>
 
             {/* 2. Intro & Stats Section - Dark Theme */}
-            <section className="bg-[#040B16] text-white py-20 md:py-32 px-6 md:px-12 text-center flex flex-col justify-end items-center w-full">
+            <section className="relative bg-[#040B16] text-white py-20 md:py-32 px-6 md:px-12 text-center flex flex-col justify-end items-center w-full overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/design-system/Goal-2.png"
+                        alt="Background"
+                        fill
+                        className="object-cover opacity-100"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-[#040B16]/30" />
+                </div>
                 
-                <div className="max-w-[90rem] mx-auto flex flex-col w-full">
+                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full">
                     <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start">
                         <p className="text-xl md:text-2xl leading-relaxed text-neutral-300 w-full">
                             In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
@@ -66,25 +76,25 @@ export default function DesignSystemPage() {
 
                     <div className="mx-auto flex flex-col">
                         <div className="flex flex-col gap-16 md:gap-32">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col w-full">
                                 <div className="flex flex-row w-full gap-12">
                                     {/* Stat 1 */}
-                                    <div className="w-full">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">7</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Products Adopted</div>
                                     </div>
                                     {/* Stat 2 */}
-                                    <div className="w-full">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">95%</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Code match (parity)</div>
                                     </div>
                                     {/* Stat 3 */}
-                                    <div className="w-full">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">70%</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Faster development</div>
                                     </div>
                                     {/* Stat 4 */}
-                                    <div className="w-full">
+                                    <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px]">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">50%</div>
                                         <div className="text-neutral-400 text-sm uppercase tracking-wider">Less design rework</div>
                                     </div>

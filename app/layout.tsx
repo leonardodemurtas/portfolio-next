@@ -33,6 +33,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif',
+          backgroundColor: 'var(--foreground)',
+        }}
       >
         <div className="min-h-screen flex flex-col">
           <Header />
