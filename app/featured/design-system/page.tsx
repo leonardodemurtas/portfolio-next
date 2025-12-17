@@ -37,24 +37,7 @@ export default function DesignSystemPage() {
             <section className="bg-[#040B16] text-white py-20 md:py-32 px-6 md:px-12 text-center">
                 <div className="max-w-[90rem] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32">
-                        <div className="space-y-8 flex flex-col items-start text-left md:w-[1636px] md:pt-[140px] md:pr-[513px] md:pb-0 md:pl-[513px]">
-                            <p className="text-xl md:text-2xl leading-relaxed text-neutral-300">
-                                In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
-                            </p>
-                            <p className="text-lg text-neutral-400">
-                                The original experience was disjointed and expensive to maintain.
-                                Developers were shipping pages that looked different from one another,
-                                users felt lost, and support tickets kept coming in.
-                            </p>
-                            <p className="text-lg text-neutral-400">
-                                We needed a unified design system to reduce rework and create a consistent, trustworthy experience.
-                            </p>
-                            <p className="font-mono text-emerald-400 pt-4">
-                                My role: Product Lead & Design System Architect
-                            </p>
-                        </div>
-
-                        <div>
+                        <div className="flex flex-col">
                             <h2 className="text-4xl md:text-5xl font-bold mb-12 text-left">
                                 One system.
                                 <br />
@@ -85,6 +68,23 @@ export default function DesignSystemPage() {
                                     <div className="text-neutral-400 text-sm uppercase tracking-wider">Less design rework</div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="space-y-8 max-w-[610px] text-left">
+                            <p className="text-xl md:text-2xl leading-relaxed text-neutral-300">
+                                In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
+                            </p>
+                            <p className="text-lg text-neutral-400">
+                                The original experience was disjointed and expensive to maintain.
+                                Developers were shipping pages that looked different from one another,
+                                users felt lost, and support tickets kept coming in.
+                            </p>
+                            <p className="text-lg text-neutral-400">
+                                We needed a unified design system to reduce rework and create a consistent, trustworthy experience.
+                            </p>
+                            <p className="font-mono text-emerald-400 pt-4">
+                                My role: Product Lead & Design System Architect
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -309,7 +309,7 @@ export default function DesignSystemPage() {
             </section>
 
             {/* 4. Reflection / Footer Section - Dark */}
-            <section className="bg-[#0a0f1c] text-white py-20 md:py-32 px-6 md:px-12">
+            <section className="bg-[#040B16] text-white py-20 md:py-32 px-6 md:px-12">
                 <div className="max-w-[90rem] mx-auto border-t border-neutral-800 pt-20">
                     <h2 className="text-sm font-medium tracking-widest uppercase text-neutral-500 mb-8">
                         Reflection and Future Directions
