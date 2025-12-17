@@ -206,7 +206,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Building the system backbone */}
-                    <div className="space-y-12 max-w-[1200px] p-12 w-full">
+                    <div className="bg-[#e6f0ed] space-y-12 max-w-[1200px] p-12 w-full">
                         <div className="max-w-3xl">
                             <h3 className="text-3xl font-medium mb-6">Building the system backbone</h3>
                             <p className="text-lg text-neutral-600">
