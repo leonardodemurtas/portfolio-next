@@ -22,7 +22,7 @@ export default function DesignSystemPage() {
                     />
                 </div>
 
-                <div className="relative z-20 h-full max-w-[90rem] mx-auto px-6 md:px-12 flex items-center">
+                <div className="relative z-20 h-full max-w-[90rem] mx-auto px-6 md:px-12 flex items-end justify-start">
                     <div className="max-w-4xl">
                         <h1 className={`${inter.className} text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] mb-8`} style={{ fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif' }}>
                             Ship enterprise-grade
