@@ -125,10 +125,11 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Laying the groundwork */}
-                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] w-full p-12 ">
-                        <h3 className="text-2xl font-medium mb-12">Laying the groundwork</h3>
+                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] w-full p-12 pt-20 mb-16">
+                        <h3 className="text-3xl px-12 font-semibold leading-tight mb-12">Laying the groundwork</h3>
 
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 w-full">
+                        <div className="flex flex-row justify-between mb-12 items-center w-full">
+                            <div className="flex flex-row gap-6"></div>
                             <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
                                 <Image src="/design-system/logo-material.png" alt="Material" width={64} height={64} className="object-contain" />
                             </div>
@@ -141,9 +142,10 @@ export default function DesignSystemPage() {
                             <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
                                 <Image src="/design-system/logo-fluent.png" alt="Fluent" width={64} height={64} className="object-contain" />
                             </div>
+                            <div className="flex flex-row gap-6"></div>
                         </div>
 
-                        <div className="max-w-3xl space-y-6 text-lg text-neutral-700">
+                        <div className="max-w-3xl mb-16 px-12 text-lg text-neutral-700">
                             <p>
                                 I studied top design systems (Material 3, Carbon, Fluent, Apple) to find patterns that worked for enterprise data.
                                 We needed a system that was dense enough for complex tables but spacious enough for readability.
@@ -174,9 +176,9 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Principles */}
-                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] w-full p-12">
-                        <h3 className="text-3xl font-semibold leading-tight pb-6 text-[#1a4d42]">The rules that made decisions faster</h3>
-                        <p className="max-w-3xl text-lg text-neutral-600 mb-12">
+                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] w-full p-12 pt-20 mb-16">
+                        <h3 className="text-3xl px-12 text-neutral-900 font-semibold leading-tight mb-6">The rules that made decisions faster</h3>
+                        <p className="max-w-3xl px-12 text-lg text-neutral-600 mb-12">
                             To guide our component choices, we established three core principles.
                             Whenever we had a debate, we returned to these:
                         </p>
@@ -198,7 +200,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Building the system backbone */}
-                    <div className="bg-[#CBCADE3D] rounded-3xl space-y-12 max-w-[1200px] p-0 w-full">
+                    <div className="bg-[#CBCADE3D] rounded-3xl space-y-12 max-w-[1200px] p-0 pt-8 mb-16 w-full">
                         
                         <div className="flex flex-col gap-0">
                             
