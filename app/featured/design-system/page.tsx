@@ -125,20 +125,20 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Laying the groundwork */}
-                    <div className="bg-[#f0ede6] rounded-3xl p-12 md:p-16">
+                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] p-12 ">
                         <h3 className="text-2xl font-medium mb-12">Laying the groundwork</h3>
 
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-                            <div className="aspect-square bg-white rounded-2xl flex items-center justify-center p-8 shadow-sm">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 w-full">
+                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
                                 <Image src="/design-system/logo-material.png" alt="Material" width={64} height={64} className="object-contain" />
                             </div>
-                            <div className="aspect-square bg-white rounded-2xl flex items-center justify-center p-8 shadow-sm">
+                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
                                 <Image src="/design-system/logo-apple.png" alt="Apple" width={64} height={64} className="object-contain" />
                             </div>
-                            <div className="aspect-square bg-white rounded-2xl flex items-center justify-center p-8 shadow-sm">
+                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
                                 <Image src="/design-system/logo-carbon.png" alt="Carbon" width={64} height={64} className="object-contain" />
                             </div>
-                            <div className="aspect-square bg-white rounded-2xl flex items-center justify-center p-8 shadow-sm">
+                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
                                 <Image src="/design-system/logo-fluent.png" alt="Fluent" width={64} height={64} className="object-contain" />
                             </div>
                         </div>
@@ -176,7 +176,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Principles */}
-                    <div className="bg-[#e6f0ed] rounded-3xl p-12 md:p-16">
+                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] p-12">
                         <h3 className="text-2xl font-medium mb-12 text-[#1a4d42]">The rules that made decisions faster</h3>
                         <p className="max-w-3xl text-lg text-[#2c5e53] mb-12">
                             To guide our component choices, we established three core principles.
@@ -184,7 +184,7 @@ export default function DesignSystemPage() {
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div className="bg-[#cce3de] p-8 rounded-xl min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
+                            <div className=" p-8 rounded-xl min-h-[200px] flex flex-col justify-between ">
                                 <div className="w-12 h-12 border-2 border-[#1a4d42] rounded-full flex items-center justify-center mb-4">
                                     <span className="text-2xl">⚡️</span>
                                 </div>
@@ -206,7 +206,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Building the system backbone */}
-                    <div className="space-y-12">
+                    <div className="space-y-12 max-w-[1200px] p-12">
                         <div className="max-w-3xl">
                             <h3 className="text-3xl font-medium mb-6">Building the system backbone</h3>
                             <p className="text-lg text-neutral-600">
