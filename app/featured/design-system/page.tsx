@@ -46,7 +46,7 @@ export default function DesignSystemPage() {
                 </div>
                 
                 <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full justify-start gap-6 items-center">
-                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pb-[230px]">
+                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pt-12 pb-[163px]">
                         <p className="text-xl md:text-2xl leading-relaxed text-neutral-300 w-full">
                             In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
                         </p>
@@ -64,7 +64,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     <div className="space-y-8 max-w-[610px] text-left w-full mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-left w-full">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-left w-full pb-[280px]">
                             One system.
                             <br />
                             Many brands.
@@ -73,10 +73,10 @@ export default function DesignSystemPage() {
                         </h2>                        
                     </div> 
 
-                    <div className="mx-auto flex flex-col">
+                    <div className="mx-auto flex flex-col w-full">
                         <div className="flex flex-col gap-16 md:gap-32">
                             <div className="flex flex-col w-full">
-                                <div className="flex flex-row w-full gap-12">
+                                <div className="flex flex-row w-full gap-6">
                                     {/* Stat 1 */}
                                     <div className="w-full p-6 rounded-2xl border border-white/[0.06] bg-[#040B16]/30 backdrop-blur-[18px] text-left">
                                         <div className="text-4xl md:text-5xl font-bold mb-2">7</div>
@@ -125,7 +125,7 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Laying the groundwork */}
-                    <div className="bg-[#f0ede6] rounded-3xl p-12 md:p-16">
+                    <div className="bg-[#f0ede6] rounded-3xl flex max-w-[1200px] py-14 px-0 flex-col items-center gap-8 self-stretch">
                         <h3 className="text-2xl font-medium mb-12">Laying the groundwork</h3>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
