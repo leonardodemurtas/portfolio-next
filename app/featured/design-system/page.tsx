@@ -206,34 +206,8 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Building the system backbone */}
-                    <div className="bg-[#e6f0ed] space-y-12 max-w-[1200px] p-12 w-full">
-                        <div className="max-w-3xl">
-                            <h3 className="text-3xl font-medium mb-6">Building the system backbone</h3>
-                            <p className="text-lg text-neutral-600">
-                                I defined the architecture starting from Tokens (colors, spacing, elevation)
-                                up to Templates. We used Figma Variables to manage themes (Light/Dark)
-                                and density.
-                            </p>
-                        </div>
-                        
-                        {/* Token Image */}
-                        <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-[#1e1e1e]">
-                            <Image 
-                                src="/design-system/tokens-2.png" 
-                                alt="Design Tokens Interface" 
-                                width={1400} 
-                                height={800} 
-                                className="w-full h-auto"
-                            />
-                        </div>
-
-                        <p className="text-sm text-neutral-500 text-center italic">
-                            The system supports multi-brand theming through primitive and semantic tokens.
-                        </p>
-                    </div>
-
-                    {/* Micro reusable decisions */}
-                    <div className="space-y-12">
+                    <div className="bg-[#EFEEEF] rounded-3xl space-y-12 max-w-[1200px] p-12 w-full">
+                        <div className="flex flex-col gap-6">
                         <div className="max-w-3xl">
                             <h3 className="text-3xl font-medium mb-6">Micro reusable decisions (Tokens & Components)</h3>
                             <p className="text-lg text-neutral-600 mb-8">
@@ -243,16 +217,51 @@ export default function DesignSystemPage() {
                             </p>
                         </div>
 
-                        {/* Tokens Static Image */}
-                        <div className="rounded-3xl overflow-hidden shadow-lg border border-white/10 bg-[#0d1117] mb-12">
-                             <Image 
-                                 src="/design-system/tokens-1.png" 
-                                 alt="Color Tokens" 
-                                 width={1200} 
-                                 height={800} 
-                                 className="w-full h-auto"
-                             />
+                        
+                        <div className="max-w-3xl">
+                            <h3 className="text-3xl font-medium mb-6">Building the system backbone</h3>
+                            <p className="text-lg text-neutral-600">
+                                I defined the architecture starting from Tokens (colors, spacing, elevation)
+                                up to Templates. We used Figma Variables to manage themes (Light/Dark)
+                                and density.
+                            </p>
                         </div>
+                        
+                        <div className="full-width flex flex-col gap-6">
+                            {/* Token Image */}
+                            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-[#1e1e1e] w-full">
+                                <Image 
+                                    src="/design-system/tokens-2.png" 
+                                    alt="Design Tokens Interface" 
+                                    width={1400} 
+                                    height={800} 
+                                    className="w-full h-auto"
+                                />
+                            </div>
+                            {/* Tokens Static Image */}
+                            <div className="rounded-3xl overflow-hidden shadow-lg border border-white/10 bg-[#0d1117] mb-12">
+                                <Image 
+                                    src="/design-system/tokens-1.png" 
+                                    alt="Color Tokens" 
+                                    width={1200} 
+                                    height={800} 
+                                    className="w-full h-auto"
+                                />
+                            </div>
+                        </div>
+                        
+                        </div>
+
+                        <p className="text-sm text-neutral-500 text-center italic">
+                            The system supports multi-brand theming through primitive and semantic tokens.
+                        </p>
+
+
+                    </div>
+
+                    {/* Micro reusable decisions */}
+                    <div className="space-y-12">
+                    
 
                         {/* Carousel 1: Components */}
                         <div className="py-8">
