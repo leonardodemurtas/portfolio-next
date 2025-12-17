@@ -11,7 +11,7 @@ export default function DesignSystemPage() {
             {/* 1. Hero Section */}
             <section className="relative h-[85vh] min-h-[600px] w-full bg-[#040B16] text-white overflow-hidden">
                 {/* Background Image Placeholder */}
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_33%,rgba(4,11,22,0)_0%,rgba(4,11,22,1)_100%)] z-10" style={{ background: 'radial-gradient(ellipse at 50% 33%, rgba(4, 11, 22, 0) 0%, rgba(4, 11, 22, 1) 100%)' }} />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_33%,rgba(4,11,22,0)_0%,rgba(4,11,22,1)_100%)] z-10" />
                 <div className="absolute inset-0 z-0 opacity-60">
                     <Image
                         src="/design-system-hero.png"
