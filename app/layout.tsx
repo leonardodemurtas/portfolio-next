@@ -35,12 +35,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
           fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif',
-          backgroundColor: 'var(--foreground)',
+          backgroundColor: 'var(--background)',
         }}
       >
-        <div className="min-h-screen flex flex-col">
+        <div className="w-full flex flex-col mx-auto ">
           <Header />
-          <main className="flex-grow">
+          <main className="flex-grow w-full mx-auto">
             {children}
           </main>
           <Footer />
