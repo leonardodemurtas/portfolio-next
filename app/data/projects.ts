@@ -19,8 +19,8 @@ export const featuredProjects: Project[] = [
         title: "Design System for Enterprise Risk",
         role: "Product design, UX",
         period: "2023–2024",
-        cardHeadline: "Boosting speed and consistency",
-        cardImage: "/case-study-car.png",
+        cardHeadline: "Ship enterprise-grade experiences consistently",
+        cardImage: "/design-system-hero.png",
         sections: [
             {
                 title: "Why we needed a change",
