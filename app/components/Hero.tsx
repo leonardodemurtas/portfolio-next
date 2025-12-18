@@ -14,7 +14,7 @@ export function Hero() {
                 priority
             />
             <div className="absolute inset-0 bg-white/20 -z-10" />
-            <div className="w-full x-full px-6 pt-0 flex items-start">
+            <div className="w-full max-w-[88rem] mx-auto px-12 pt-0 flex items-start">
 
                 {/* Left Column: Content */}
                 <div className="w-full max-w-[50rem] ">
@@ -28,7 +28,7 @@ export function Hero() {
                         </h1>
                     </div>
 
-                    <p className="max-w-xl pt-16text-lg text-neutral-600 leading-relaxed font-medium">
+                    <p className="max-w-xl pt-16 text-lg text-neutral-600 leading-relaxed font-medium">
                         Most of my work lives in enterprise risk and credit platforms, where analysts rely on clear interfaces to act fast. I focus on reusable patterns, decision-support dashboards, and workflows that reduce cognitive load instead of adding more charts.
                     </p>
                 </div>

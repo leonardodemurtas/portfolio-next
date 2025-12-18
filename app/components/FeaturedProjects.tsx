@@ -5,10 +5,10 @@ import { featuredProjects } from "../data/projects";
 
 export function FeaturedProjects() {
     return (
-        <section id="featured" className="py-20 md:py-32 px-6 md:px-12 max-w-[90rem] mx-auto relative">
+        <section id="featured" className=" pb-20 pt-6 px-6 md:px-12 max-w-[90rem] mx-auto relative">
             {/* Heading */}
-            <div className="flex justify-center mb-12 md:mb-20">
-                <h2 className="text-[12vw] md:text-[10rem] font-thin text-neutral-900/5 tracking-tight leading-[0.8] select-none w-full">
+            <div className="flex pt-0 justify-center mb-16 md:mb-10 ">
+                <h2 className=" text-[12vw] md:text-[10rem] font-thin text-neutral-900/5 tracking-tight leading-[0.8] select-none w-full">
                     PROJECTS
                 </h2>
             </div>
