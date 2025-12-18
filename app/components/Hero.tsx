@@ -30,7 +30,7 @@ export function Hero() {
                 {/* Right Column: Image */}
                 <div className="relative aspect-[4/5] w-full max-w-lg mx-auto md:ml-auto md:mr-0 rounded-3xl overflow-hidden bg-neutral-100">
                     <Image
-                        src="/hero-sitting-new.jpg"
+                        src="/hero-sitting.png"
                         alt="Leonardo De Murtas"
                         fill
                         className="object-cover object-center"
