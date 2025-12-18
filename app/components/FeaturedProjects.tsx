@@ -18,7 +18,7 @@ export function FeaturedProjects() {
                     <Link
                         key={project.slug}
                         href={`/featured/${project.slug}`}
-                        className="group relative block w-full aspect-[4/3] md:aspect-[2.35/1] rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
+                        className="group relative block w-full aspect-video rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
                     >
                         {/* Background Image */}
                         <div className="absolute inset-0 bg-neutral-900">
