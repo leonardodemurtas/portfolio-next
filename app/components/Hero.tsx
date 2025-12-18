@@ -33,7 +33,7 @@ export function Hero() {
                         src="/hero-sitting-new.jpg"
                         alt="Leonardo De Murtas"
                         fill
-                        className="object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
+                        className="object-cover object-center"
                         priority
                         sizes="(max-width: 768px) 100vw, 50vw"
                     />
