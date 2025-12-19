@@ -1,9 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Carousel, CarouselSlide } from "../../components/ui/Carousel";
+import { TemplateCarousel } from "../../components/ui/TemplateCarousel";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const TEMPLATES = [
+    { src: "/design-system/powerbiz.png", title: "Powerbix" },
+    { src: "/design-system/table.png", title: "Data Table" },
+    { src: "/design-system/cpm.png", title: "CPM Dashboard" },
+    { src: "/design-system/dashboard-cpm.png", title: "CPM Analytics" },
+    { src: "/design-system/dashboard-powerbiz.png", title: "Powerbiz Overview" },
+    { src: "/design-system/widget-table.png", title: "Table Widget" },
+    { src: "/design-system/widget-goal.png", title: "Goal Tracker" },
+];
 
 export default function DesignSystemPage() {
     return (
@@ -111,7 +122,7 @@ export default function DesignSystemPage() {
             </section>
 
             {/* 3. Shaping the system - Light Theme */}
-            <section className="bg-[#fcfbf9] text-neutral-900 md:py-32 px-0 border-4 border-green-500 border-solid">
+            <section className="bg-[#fcfbf9] text-neutral-900 md:py-32 px-0">
                 <div className="w-full flex flex-col justify-start items-center">
                     {/* Header */}
                     <div className="max-w-3xl">
@@ -254,7 +265,7 @@ export default function DesignSystemPage() {
                     <div className="bg-[#5A9DD13D] p-12 md:p-20 rounded-3xl space-y-12 max-w-[1200px] mb-16 w-full">
                         <div>
                             <h3 className="text-3xl font-medium mb-8 text-[#1e1b4b]">Token-driven building blocks</h3>
-                            <p className="max-w-3xl text-lg text-neutral-900 mb-12">
+                            <p className="max-w-2xl text-lg text-neutral-900 mb-12">
                                 Components are the UI’s building blocks. To make them read the same in light and dark, we tuned not just color but elevation, shadows, strokes, and focus states. Shadows are crisper in light and softer in dark to keep hierarchy without glare. Tokens drive these rules, so components stay consistent across modes without per-component overrides.
                             </p>
                         </div>
@@ -298,22 +309,19 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Templates */}
-                    <div className="w-full flex flex-col gap-12 border border-blue-500">
-                        <div className="rounded-3xl overflow-hidden p-12 md:p-20">
+                    <div className="w-full flex flex-col items-center justify-center bg-[#F7F5EE] py-20 pt-32 pb-0">
+                        <div className="max-w-2xl w-full md:px-12 mb-12">
                             <h3 className="text-3xl font-medium mb-12 text-[#1e1b4b]">Templates that get the work done</h3>
-                            <p className="max-w-3xl text-lg text-neutral-900 mb-12">
+                            <p className="text-g text-neutral-900 mb-32">
                                 Templates serve as specialized layouts for different user tasks. They include various formats such as the archive template for presenting multiple content types and the entity layout for detailed presentations of single items. These templates standardize the presentation of information, ensuring clarity and consistency across different products and scenarios.
                             </p>
-                            <div className="bg-[#F7F5EE] w-full border border-red-500 overflow-hidden">
-                                <div className=" aspect-[16/10] relative rounded-xl overflow-hidden">
-                                    <Image src="/design-system/dashboard-cpm.png" alt="CPM Dashboard" fill className="object-cover" />
-                                </div>
-                            </div>
-                            
                         </div>
-
-                        {/* What's Next Section */}
-                        <div className="py-20 border-t border-neutral-200">
+                        
+                        <TemplateCarousel slides={TEMPLATES} />
+                    </div>
+                </div>
+                {/* What's Next Section */}
+                <div className="px-6 md:px-12 border-t border-neutral-200 py-32">
                             <div className="max-w-3xl">
                                 <h3 className="text-3xl font-medium mb-8">What's next?</h3>
                                 <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
@@ -327,8 +335,6 @@ export default function DesignSystemPage() {
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
             </section>
         </div>
     );
