@@ -1,6 +1,6 @@
 # Full Text Reference with Site Map
 
-This document contains the site map of Leonardo De Murtas’s portfolio along with the textual content captured from each major section. It is intended as a comprehensive reference for redesign or analysis of the portfolio.
+This document contains the site map of Leonardo Demurtas’s portfolio along with the textual content captured from each major section. It is intended as a comprehensive reference for redesign or analysis of the portfolio.
 
 ## Home Page
 
