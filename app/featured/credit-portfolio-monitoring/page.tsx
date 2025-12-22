@@ -121,7 +121,7 @@ export default function CreditPortfolioMonitoringPage() {
                 {/* Background Images */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/cpm/hero.png"
+                        src="/cpm/hero-v2.png"
                         alt="Office background"
                         fill
                         className="object-cover"
@@ -417,7 +417,7 @@ The benefits of the design work were many. Not only did it improve internal comm
                                 Strategic Redefinition
                             </h5>
                             <p className="text-lg text-neutral-400 leading-relaxed">
-                                The transition from a single software solution to three distinct applications tailored to different personas was a complex but rewarding endeavor. It challenged conventional thinking and demanded a robust understanding of diverse user needs.
+                                Aligning the new product vision with the broader company strategy was critical. We worked to ensure that the redesign went beyond usability improvements to become a strategic asset that supported the bank's long-term goals and compliance requirements.
                             </p>
                         </div>
                     </div>
