@@ -161,14 +161,14 @@ export default function CreditPortfolioMonitoringPage() {
             </section>
 
             {/* 3. Goal Section with KPI Cards */}
-            <section className="relative bg-[var(--foreground)] min-h-[960px] overflow-hidden">
+            <section className="relative bg-[var(--foreground)] min-h-[960px] overflow-hidden flex flex-col justify-start items-center">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/design-system/Goal-2.png"
                         alt="Dashboard background"
                         fill
-                        className="object-contain object-center"
+                        className="object-cover object-center"
                     />
                 </div>
                 {/* Top gradient fade */}
@@ -180,9 +180,9 @@ export default function CreditPortfolioMonitoringPage() {
                 />
                 
                 {/* Content */}
-                <div className="relative z-20 flex flex-col items-center pt-8 pb-16">
+                <div className="relative z-20 flex flex-col items-center pt-0 pb-0">
                     {/* Statement */}
-                    <div className="max-w-[610px] w-full px-6 pt-8 pb-20">
+                    <div className="max-w-[610px] w-full px-0 pt-0 pb-[92px]">
                         <h2 className={`${inter.className} text-4xl md:text-[40px] font-medium leading-[56px] text-white`}>
                             A research-backed concept.
                             <br />
@@ -193,7 +193,7 @@ export default function CreditPortfolioMonitoringPage() {
                     </div>
 
                     {/* KPI Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-20 mb-16 w-full max-w-[1200px]">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-40 pb-12 px-0 mb-16 w-full max-w-[1200px]">
                         <KpiTile value="7" label="Time to concept approval" />
                         <KpiTile value="+50%" label="Redesign time reduced" />
                         <KpiTile value="3" label="New archetypes" />
@@ -201,13 +201,12 @@ export default function CreditPortfolioMonitoringPage() {
                     </div>
 
                     {/* The Pivot */}
-                    <div className="max-w-[610px] w-full px-6 text-white">
-                        <p className="text-xl leading-relaxed mb-6">The pivot</p>
-                        <ul className="text-lg leading-relaxed space-y-1 list-disc list-inside">
-                            <li>Decision: split one product into 3 modules</li>
-                            <li>Why: different goals, different workflows, different success metrics</li>
-                            <li>Trade-off: more surface area, but clearer ownership and roadmap</li>
-                        </ul>
+                    <div className="max-w-[610px] flex flex-col gap-4 h-auto w-full px-0 text-white">
+                        <div className="pb-6"><p className="text-2xl text-neutral-400 leading-relaxed">The pivot</p></div>
+                        <div className="text-lg text-neutral-400 leading-relaxed h-auto"><span className="font-semibold text-lg text-white ">Decision:</span> split one product into 3 modules</div>
+                        <div className="text-lg text-neutral-400 leading-relaxed pb-0"><span className="font-semibold text-lg text-white ">Why:</span> different goals, different workflows, different success metricss</div>
+                        <div className="text-lg text-neutral-400 leading-relaxed pb-0"><span className="font-semibold text-lg text-white ">Trade-off:</span> more surface area, but clearer ownership and roadmap</div>
+                        
                     </div>
                 </div>
             </section>
