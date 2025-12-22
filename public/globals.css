@@ -1,0 +1,894 @@
+/** biome-ignore-all lint/suspicious/noDuplicateCustomProperties: biome doesn't know the @variant directive **/
+@import url("https://fonts.googleapis.com/css2?family=Source Sans 3&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ************************************************* */
+  /* under base surface colors */
+  /* ************************************************* */
+
+  --underbase-surface: #f0f1f5;
+
+  /* ************************************************* */
+  /* base surface colors */
+  /* ************************************************* */
+
+  --base-surface: #f9fafb;
+  --base-surface-variant: #eff1f4;
+  --base-surface-variant-plus-1: #eff1f4;
+
+  /* ************************************************* */
+  /* middle surface colors */
+  /* ************************************************* */
+
+  --middle-surface: #fcfcfd;
+  --middle-surface-variant: #f2f3f5;
+  --middle-surface-variant-plus-1: #f2f3f5;
+
+  /* ************************************************* */
+  /* top surface colors */
+  /* ************************************************* */
+
+  --top-surface: #ffffff;
+  --top-surface-variant: #f4f5f7;
+  --top-surface-variant-plus-1: #f4f5f7;
+
+  /* ************************************************* */
+  /* emphasis colors */
+  /* ************************************************* */
+
+  --high-emphasis: #2a303c;
+  --medium-emphasis: #5c6984;
+  --low-emphasis: #72809d;
+
+  /* ************************************************* */
+  /* stroke colors */
+  /* ************************************************* */
+
+  --stroke: #e1e4ea;
+  --stroke-weak: #e1e4ea;
+  --stroke-strong: #c3c9d5;
+
+  /* ************************************************* */
+  /* notification colors */
+  /* ************************************************* */
+
+  --primary: #007bc2;
+  --primary-hover: #006ba8;
+  --primary-foreground: #ffffff;
+  --primary-variant: #006ba8;
+  --primary-variant-hover: #006199;
+
+  --secondary: #008571;
+  --secondary-hover: #007564;
+  --secondary-foreground: #ffffff;
+  --secondary-variant: #007564;
+  --secondary-variant-hover: #006657;
+
+  --error-foreground: #ffffff;
+  --error-hover: #8e0017;
+  --error: #cc0022;
+
+  --info-foreground: #ffffff;
+  --info-hover: #2a487d;
+  --info: #3c68b4;
+
+  --success-foreground: #ffffff;
+  --success-hover: #334e1c;
+  --success: #4a7029;
+
+  --warning-foreground: #ffffff;
+  --warning-hover: #663f00;
+  --warning: #935b01;
+
+  /* ************************************************* */
+  /* transparent colors */
+  /* ************************************************* */
+
+  --hover: #669eff14;
+  --selected: #669eff1c;
+
+  /* ************************************************* */
+  /* transparent variant colors */
+  /* ************************************************* */
+
+  --variant: #a5aec01f;
+  --variant-plus-1: #a5aec01f;
+
+  /* ************************************************* */
+  /* Chart colors */
+  /* ************************************************* */
+
+  --chart-red-100: #7a1f1f;
+  --chart-red-200: #9b2727;
+  --chart-red-300: #c03030;
+  --chart-red-400: #d14848;
+  --chart-red-500: #d96868;
+  --chart-red-600: #e28d8d;
+  --chart-red-700: #ebadad;
+
+  --chart-salmon-100: #884e3a;
+  --chart-salmon-200: #a86048;
+  --chart-salmon-300: #ba765f;
+  --chart-salmon-400: #c68e7b;
+  --chart-salmon-500: #d4a99b;
+  --chart-salmon-600: #e0c2b8;
+  --chart-salmon-700: #eddad4;
+
+  --chart-green-100: #3a883a;
+  --chart-green-200: #48a848;
+  --chart-green-300: #5ebb5e;
+  --chart-green-400: #7bc67b;
+  --chart-green-500: #9bd49b;
+  --chart-green-600: #b8e0b8;
+  --chart-green-700: #d4edd4;
+
+  --chart-yellow-100: #916f08;
+  --chart-yellow-200: #b88d0a;
+  --chart-yellow-300: #e3ad0c;
+  --chart-yellow-400: #f4c025;
+  --chart-yellow-500: #f6cb4b;
+  --chart-yellow-600: #f8d877;
+  --chart-yellow-700: #fae39e;
+
+  --chart-teal-100: #308191;
+  --chart-teal-200: #3c9fb3;
+  --chart-teal-300: #53b2c6;
+  --chart-teal-400: #71c0d0;
+  --chart-teal-500: #94cfdb;
+  --chart-teal-600: #b3dde5;
+  --chart-teal-700: #d1ebf0;
+
+  --chart-blue-100: #1d61a5;
+  --chart-blue-200: #2478cb;
+  --chart-blue-300: #3c8cdd;
+  --chart-blue-400: #5ea0e3;
+  --chart-blue-500: #85b7ea;
+  --chart-blue-600: #a8ccf0;
+  --chart-blue-700: #cbe0f6;
+
+  --chart-purple-100: #4a3f83;
+  --chart-purple-200: #5b4da2;
+  --chart-purple-300: #7264b5;
+  --chart-purple-400: #8b80c2;
+  --chart-purple-500: #a69ed1;
+  --chart-purple-600: #c0bade;
+  --chart-purple-700: #d9d6eb;
+
+  --chart-magenta-100: #7e4474;
+  --chart-magenta-200: #9b548f;
+  --chart-magenta-300: #af6aa3;
+  --chart-magenta-400: #bd84b3;
+  --chart-magenta-500: #cda2c6;
+  --chart-magenta-600: #dbbdd6;
+  --chart-magenta-700: #ead7e7;
+
+  /* ************************************************* */
+  /* Cerved colors */
+  /* ************************************************* */
+
+  --cerved-cgs-1: #ca473e;
+  --cerved-cgs-2: #eac950;
+  --cerved-cgs-3: #cfd589;
+  --cerved-cgs-4: #bdd78d;
+  --cerved-cgs-5: #a3d4b0;
+  --cerved-cgs-6: #7dc7a1;
+  --cerved-cgs-7: #5abc8a;
+  --cerved-cgs-8: #57a27d;
+
+  --cerved-c4-1: #2a9765; /* Assenti */
+  --cerved-c4-2: #eac950;
+  --cerved-c4-3: #eaa050;
+  --cerved-c4-4: #ea6343;
+  --cerved-c4-5: #cb3c2e; /* Gravissimi */
+
+  /* ************************************************* */
+  /*  */
+  /* ************************************************* */
+
+  --background: var(--base-surface);
+  --foreground: var(--high-emphasis);
+
+  --card: var(--middle-surface);
+  --card-foreground: var(--high-emphasis);
+  --popover: var(--top-surface);
+  --popover-foreground: var(--high-emphasis);
+  --muted: var(--variant);
+  --muted-foreground: inherit;
+  --accent: var(--hover);
+  --accent-foreground: inherit;
+  --border: var(--stroke);
+  --border-stroke-strong: var(--stroke-strong);
+  --border-stroke-weak: var(--stroke-weak);
+  --input: var(--border);
+  --ring: var(--primary);
+  --radius: 4px;
+  --spacing: 4px;
+
+  /* ************************************************* */
+  /* display font sizes */
+  /* ************************************************* */
+
+  --text-display-lg: 38px;
+  --text-display-lg--line-height: 44px;
+  --text-display-lg--letter-spacing: -0.25px;
+  --text-display-lg--font-weight: 700;
+  @variant sm {
+    --text-display-lg: 56px;
+    --text-display-lg--line-height: 64px;
+    --text-display-lg--letter-spacing: unset;
+  }
+
+  --text-display: 36px;
+  --text-display--line-height: 40px;
+  --text-display--letter-spacing: -0.25px;
+  --text-display--font-weight: 700;
+  @variant sm {
+    --text-display: 48px;
+    --text-display--line-height: 56px;
+    --text-display--letter-spacing: unset;
+  }
+
+  --text-display-sm: 34px;
+  --text-display-sm--line-height: 36px;
+  --text-display-sm--letter-spacing: -0.25px;
+  --text-display-sm--font-weight: 700;
+  @variant sm {
+    --text-display-sm: 36px;
+    --text-display-sm--line-height: 44px;
+    --text-display-sm--letter-spacing: unset;
+  }
+
+  /* ************************************************* */
+  /* headline font sizes */
+  /* ************************************************* */
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 45px;
+  --text-headline-lg--font-weight: 700;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-headline-lg: 32px;*/
+  /*  --text-headline-lg--line-height: 40px;*/
+  /*}*/
+
+  --text-headline: 28px;
+  --text-headline--line-height: 40px;
+  --text-headline--font-weight: 700;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-headline: 28px;*/
+  /*  --text-headline--line-height: 36px;*/
+  /*}*/
+
+  --text-headline-sm: 24px;
+  --text-headline-sm--line-height: 34px;
+  --text-headline-sm--font-weight: 700;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-headline-sm: 24px;*/
+  /*  --text-headline-sm--line-height: 32px;*/
+  /*}*/
+
+  /* ************************************************* */
+  /* title font sizes */
+  /* ************************************************* */
+
+  --text-title-lg: 20px;
+  --text-title-lg--line-height: 24px;
+  --text-title-lg--font-weight: 700;
+  @variant sm {
+    --text-title-lg: 20px;
+    --text-title-lg--line-height: 28px;
+  }
+
+  --text-title: 16px;
+  --text-title--line-height: 20px;
+  --text-title--font-weight: 700;
+  @variant sm {
+    --text-title: 16px;
+    --text-title--line-height: 24px;
+  }
+
+  --text-title-sm: 14px;
+  --text-title-sm--line-height: 18px;
+  --text-title-sm--font-weight: 700;
+  @variant sm {
+    --text-title-sm: 14px;
+    --text-title-sm--line-height: 20px;
+  }
+
+  /* ************************************************* */
+  /* body font sizes */
+  /* ************************************************* */
+
+  --text-xl: 20px;
+  --text-xl--line-height: 34px;
+  --text-xl--font-weight: 400;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-xl: 20px;*/
+  /*  --text-xl--line-height: 28px;*/
+  /*}*/
+
+  --text-lg: 18px;
+  --text-lg--line-height: 24px;
+  --text-lg--font-weight: 400;
+  @variant sm {
+    --text-lg: 18px;
+    --text-lg--line-height: 26px;
+  }
+
+  --text-base: 16px;
+  --text-base--line-height: 20px;
+  --text-base--font-weight: 400;
+  @variant sm {
+    --text-base: 16px;
+    --text-base--line-height: 22px;
+  }
+
+  --text-sm: 14px;
+  --text-sm--line-height: 18px;
+  --text-sm--font-weight: 400;
+  @variant sm {
+    --text-sm: 14px;
+    --text-sm--line-height: 18px;
+  }
+
+  /* ************************************************* */
+  /* label font sizes */
+  /* ************************************************* */
+
+  --text-label-xl: 20px;
+  --text-label-xl--line-height: 24px;
+  --text-label-xl--font-weight: 400;
+  @variant sm {
+    --text-label-xl: 20px;
+    --text-label-xl--line-height: 22px;
+  }
+
+  --text-label-lg: 18px;
+  --text-label-lg--line-height: 26px;
+  --text-label-lg--font-weight: 400;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-label-lg: 18px;*/
+  /*  --text-label-lg--line-height: 24px;*/
+  /*}*/
+
+  --text-label: 16px;
+  --text-label--line-height: 18px;
+  --text-label--font-weight: 400;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-label: 16px;*/
+  /*  --text-label--line-height: 18px;*/
+  /*}*/
+
+  --text-label-sm: 14px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--font-weight: 400;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-label-sm: 14px;*/
+  /*  --text-label-sm--line-height: 16px;*/
+  /*}*/
+
+  /* ************************************************* */
+  /* caption font sizes */
+  /* ************************************************* */
+
+  --text-caption: 14px;
+  --text-caption--line-height: 20px;
+  --text-caption--font-weight: 500;
+  --text-caption--letter-spacing: 0.5px;
+  /*  TODO line height seems wrong... fix it in my own way */
+  /*@variant sm {*/
+  /*  --text-caption: 14px;*/
+  /*  --text-caption--line-height: 16px;*/
+  /*}*/
+
+  --text-caption-sm: 12px;
+  --text-caption-sm--line-height: 16px;
+  --text-caption-sm--font-weight: 500;
+  --text-caption-sm--letter-spacing: 0.5px;
+  @variant sm {
+    --text-caption-sm: 12px;
+    --text-caption-sm--line-height: 18px;
+  }
+}
+
+.dark {
+  /* ************************************************* */
+  /* under base surface colors */
+  /* ************************************************* */
+
+  --underbase-surface: #000000;
+
+  /* ************************************************* */
+  /* base surface colors */
+  /* ************************************************* */
+
+  --base-surface: #080d17;
+  --base-surface-variant: #0c1320;
+  --base-surface-variant-plus-1: #10192a;
+
+  /* ************************************************* */
+  /* middle surface colors */
+  /* ************************************************* */
+
+  --middle-surface: #0d1626;
+  --middle-surface-variant: #111b2f;
+  --middle-surface-variant-plus-1: #142137;
+
+  /* ************************************************* */
+  /* top surface colors */
+  /* ************************************************* */
+
+  --top-surface: #162641;
+  --top-surface-variant: #192b49;
+  --top-surface-variant-plus-1: #1c3050;
+
+  /* ************************************************* */
+  /* emphasis colors */
+  /* ************************************************* */
+
+  --high-emphasis: #e1e4ea;
+  --medium-emphasis: #96a0b6;
+  --low-emphasis: #72809d;
+
+  /* ************************************************* */
+  /* stroke colors */
+  /* ************************************************* */
+
+  --stroke: #669eff2e;
+  --stroke-weak: #669eff1f;
+  --stroke-strong: #669eff52;
+
+  /* ************************************************* */
+  /* notification colors */
+  /* ************************************************* */
+
+  --primary: #00a4e5;
+  --primary-hover: #00acf0;
+  --primary-foreground: #000000;
+  --primary-variant: #00acf0;
+  --primary-variant-hover: #00b7ff;
+
+  --secondary: #00b89d;
+  --secondary-hover: #00ccae;
+  --secondary-foreground: #000000;
+  --secondary-variant: #00b89d;
+  --secondary-variant-hover: #00ccae;
+
+  --error-foreground: #000000;
+  --error-hover: #b25162;
+  --error: #ff758c;
+
+  --info-foreground: #000000;
+  --info-hover: #627597;
+  --info: #8ca8d9;
+
+  --success-foreground: #000000;
+  --success-hover: #698c4a;
+  --success: #96c86a;
+
+  --warning-foreground: #000000;
+  --warning-hover: #b17a20;
+  --warning: #feaf2f;
+
+  /* ************************************************* */
+  /* transparent colors */
+  /* ************************************************* */
+
+  --hover: #669eff1f;
+  --selected: #669eff24;
+
+  /* ************************************************* */
+  /* transparent variant colors */
+  /* ************************************************* */
+
+  --variant: #669eff0a;
+  --variant-plus-1: #669eff14;
+
+  /* ************************************************* */
+  /* Chart colors */
+  /* ************************************************* */
+
+  --chart-red-100: #9b2727;
+  --chart-red-200: #c03030;
+  --chart-red-300: #d14848;
+  --chart-red-400: #d96868;
+  --chart-red-500: #e28d8d;
+  --chart-red-600: #ebadad;
+  --chart-red-700: #f3cece;
+
+  --chart-salmon-100: #6b3d2e;
+  --chart-salmon-200: #884e3a;
+  --chart-salmon-300: #a86048;
+  --chart-salmon-400: #ba765f;
+  --chart-salmon-500: #c68e7b;
+  --chart-salmon-600: #d4a99b;
+  --chart-salmon-700: #e0c2b8;
+
+  --chart-yellow-100: #b88d0a;
+  --chart-yellow-200: #e3ad0c;
+  --chart-yellow-300: #f4c025;
+  --chart-yellow-400: #f6cb4b;
+  --chart-yellow-500: #f8d877;
+  --chart-yellow-600: #fae39e;
+  --chart-yellow-700: #fceec5;
+
+  --chart-green-100: #2e6a2e;
+  --chart-green-200: #3a883a;
+  --chart-green-300: #48a848;
+  --chart-green-400: #5ebb5e;
+  --chart-green-500: #7bc67b;
+  --chart-green-600: #9bd49b;
+  --chart-green-700: #b8e0b8;
+
+  --chart-teal-100: #266673;
+  --chart-teal-200: #308191;
+  --chart-teal-300: #3c9fb3;
+  --chart-teal-400: #53b2c6;
+  --chart-teal-500: #71c0d0;
+  --chart-teal-600: #94cfdb;
+  --chart-teal-700: #b3dde5;
+
+  --chart-blue-100: #174d82;
+  --chart-blue-200: #1d61a5;
+  --chart-blue-300: #2478cb;
+  --chart-blue-400: #3c8cdd;
+  --chart-blue-500: #5ea0e3;
+  --chart-blue-600: #85b7ea;
+  --chart-blue-700: #a8ccf0;
+
+  --chart-purple-100: #3b3267;
+  --chart-purple-200: #4a3f83;
+  --chart-purple-300: #5b4da2;
+  --chart-purple-400: #7264b5;
+  --chart-purple-500: #8b80c2;
+  --chart-purple-600: #a69ed1;
+  --chart-purple-700: #c0bade;
+
+  --chart-magenta-100: #63365c;
+  --chart-magenta-200: #7e4474;
+  --chart-magenta-300: #9b548f;
+  --chart-magenta-400: #af6aa3;
+  --chart-magenta-500: #bd84b3;
+  --chart-magenta-600: #cda2c6;
+  --chart-magenta-700: #dbbdd6;
+}
+
+@theme inline {
+  --font-sans: "Source Sans 3";
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* primary */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-variant: var(--primary-variant);
+  --color-primary-variant-hover: var(--primary-variant-hover);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-variant: var(--secondary-variant);
+  --color-secondary-variant-hover: var(--secondary-variant-hover);
+
+  --color-error-foreground: var(--error-foreground);
+  --color-error-hover: var(--error-hover);
+  --color-error: var(--error);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-hover: var(--info-hover);
+  --color-info: var(--info);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-hover: var(--success-hover);
+  --color-success: var(--success);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-hover: var(--warning-hover);
+  --color-warning: var(--warning);
+
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-border-stroke-strong: var(--border-stroke-strong);
+  --color-border-stroke-weak: var(--border-stroke-weak);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-input: var(--input);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --header-height: 64px;
+  /* ************************************************* */
+  /* underbase surface colors */
+  /* ************************************************* */
+
+  --color-underbase-surface: var(--underbase-surface);
+
+  /* ************************************************* */
+  /* base surface colors */
+  /* ************************************************* */
+
+  --color-base-surface: var(--base-surface);
+  --color-base-surface-variant: var(--base-surface-variant);
+  --color-base-surface-variant-plus-1: var(--base-surface-variant-plus-1);
+
+  /* ************************************************* */
+  /* middle surface colors */
+  /* ************************************************* */
+
+  --color-middle-surface: var(--middle-surface);
+  --color-middle-surface-variant: var(--middle-surface-variant);
+  --color-middle-surface-variant-plus-1: var(--middle-surface-variant-plus-1);
+
+  /* ************************************************* */
+  /* top surface colors */
+  /* ************************************************* */
+
+  --color-top-surface: var(--top-surface);
+  --color-top-surface-variant: var(--top-surface-variant);
+  --color-top-surface-variant-plus-1: var(--top-surface-variant-plus-1);
+
+  /* ************************************************* */
+  /* emphasis colors */
+  /* ************************************************* */
+
+  --color-high-emphasis: var(--high-emphasis);
+  --color-medium-emphasis: var(--medium-emphasis);
+  --color-low-emphasis: var(--low-emphasis);
+
+  /* ************************************************* */
+  /* stroke colors */
+  /* ************************************************* */
+
+  --color-stroke: var(--stroke);
+  --color-stroke-weak: var(--stroke-weak);
+  --color-stroke-strong: var(--stroke-strong);
+
+  /* ************************************************* */
+  /* transparent colors */
+  /* ************************************************* */
+
+  --color-hover: var(--hover);
+  --color-selected: var(--selected);
+
+  /* ************************************************* */
+  /* transparent variant colors */
+  /* ************************************************* */
+
+  --color-variant: var(--variant);
+  --color-variant-plus-1: var(--variant-plus-1);
+
+  /* ************************************************* */
+  /* chart colors */
+  /* ************************************************* */
+
+  --color-chart-red-100: var(--chart-red-100);
+  --color-chart-red-200: var(--chart-red-200);
+  --color-chart-red-300: var(--chart-red-300);
+  --color-chart-red-400: var(--chart-red-400);
+  --color-chart-red-500: var(--chart-red-500);
+  --color-chart-red-600: var(--chart-red-600);
+  --color-chart-red-700: var(--chart-red-700);
+
+  --color-chart-salmon-100: var(--chart-salmon-100);
+  --color-chart-salmon-200: var(--chart-salmon-200);
+  --color-chart-salmon-300: var(--chart-salmon-300);
+  --color-chart-salmon-400: var(--chart-salmon-400);
+  --color-chart-salmon-500: var(--chart-salmon-500);
+  --color-chart-salmon-600: var(--chart-salmon-600);
+  --color-chart-salmon-700: var(--chart-salmon-700);
+
+  --color-chart-yellow-100: var(--chart-yellow-100);
+  --color-chart-yellow-200: var(--chart-yellow-200);
+  --color-chart-yellow-300: var(--chart-yellow-300);
+  --color-chart-yellow-400: var(--chart-yellow-400);
+  --color-chart-yellow-500: var(--chart-yellow-500);
+  --color-chart-yellow-600: var(--chart-yellow-600);
+  --color-chart-yellow-700: var(--chart-yellow-700);
+
+  --color-chart-green-100: var(--chart-green-100);
+  --color-chart-green-200: var(--chart-green-200);
+  --color-chart-green-300: var(--chart-green-300);
+  --color-chart-green-400: var(--chart-green-400);
+  --color-chart-green-500: var(--chart-green-500);
+  --color-chart-green-600: var(--chart-green-600);
+  --color-chart-green-700: var(--chart-green-700);
+
+  --color-chart-teal-100: var(--chart-teal-100);
+  --color-chart-teal-200: var(--chart-teal-200);
+  --color-chart-teal-300: var(--chart-teal-300);
+  --color-chart-teal-400: var(--chart-teal-400);
+  --color-chart-teal-500: var(--chart-teal-500);
+  --color-chart-teal-600: var(--chart-teal-600);
+  --color-chart-teal-700: var(--chart-teal-700);
+
+  --color-chart-blue-100: var(--chart-blue-100);
+  --color-chart-blue-200: var(--chart-blue-200);
+  --color-chart-blue-300: var(--chart-blue-300);
+  --color-chart-blue-400: var(--chart-blue-400);
+  --color-chart-blue-500: var(--chart-blue-500);
+  --color-chart-blue-600: var(--chart-blue-600);
+  --color-chart-blue-700: var(--chart-blue-700);
+
+  --color-chart-purple-100: var(--chart-purple-100);
+  --color-chart-purple-200: var(--chart-purple-200);
+  --color-chart-purple-300: var(--chart-purple-300);
+  --color-chart-purple-400: var(--chart-purple-400);
+  --color-chart-purple-500: var(--chart-purple-500);
+  --color-chart-purple-600: var(--chart-purple-600);
+  --color-chart-purple-700: var(--chart-purple-700);
+
+  --color-chart-magenta-100: var(--chart-magenta-100);
+  --color-chart-magenta-200: var(--chart-magenta-200);
+  --color-chart-magenta-300: var(--chart-magenta-300);
+  --color-chart-magenta-400: var(--chart-magenta-400);
+  --color-chart-magenta-500: var(--chart-magenta-500);
+  --color-chart-magenta-600: var(--chart-magenta-600);
+  --color-chart-magenta-700: var(--chart-magenta-700);
+
+  /* ************************************************* */
+  /* Cerved colors */
+  /* ************************************************* */
+
+  --color-cerved-cgs-1: var(--cerved-cgs-1);
+  --color-cerved-cgs-2: var(--cerved-cgs-2);
+  --color-cerved-cgs-3: var(--cerved-cgs-3);
+  --color-cerved-cgs-4: var(--cerved-cgs-4);
+  --color-cerved-cgs-5: var(--cerved-cgs-5);
+  --color-cerved-cgs-6: var(--cerved-cgs-6);
+  --color-cerved-cgs-7: var(--cerved-cgs-7);
+  --color-cerved-cgs-8: var(--cerved-cgs-8);
+
+  --color-cerved-c4-1: var(--cerved-c4-1);
+  --color-cerved-c4-2: var(--cerved-c4-2);
+  --color-cerved-c4-3: var(--cerved-c4-3);
+  --color-cerved-c4-4: var(--cerved-c4-4);
+  --color-cerved-c4-5: var(--cerved-c4-5);
+
+  /* ************************************************* */
+  /* display font sizes */
+  /* ************************************************* */
+
+  --text-display-lg: var(--text-display-lg);
+  --text-display-lg--line-height: var(--text-display-lg--line-height);
+  --text-display-lg--letter-spacing: var(--text-display-lg--letter-spacing);
+  --text-display-lg--font-weight: var(--text-display-lg--font-weight);
+
+  --text-display: var(--text-display);
+  --text-display--line-height: var(--text-display--line-height);
+  --text-display--letter-spacing: var(--text-display--letter-spacing);
+  --text-display--font-weight: var(--text-display--font-weight);
+
+  --text-display-sm: var(--text-display-sm);
+  --text-display-sm--line-height: var(--text-display-sm--line-height);
+  --text-display-sm--letter-spacing: var(--text-display-sm--letter-spacing);
+  --text-display-sm--font-weight: var(--text-display-sm--font-weight);
+
+  /* ************************************************* */
+  /* headline font sizes */
+  /* ************************************************* */
+
+  --text-headline-lg: var(--text-headline-lg);
+  --text-headline-lg--line-height: var(--text-headline-lg--line-height);
+  --text-headline-lg--font-weight: var(--text-headline-lg--font-weight);
+
+  --text-headline: var(--text-headline);
+  --text-headline--line-height: var(--text-headline--line-height);
+  --text-headline--font-weight: var(--text-headline--font-weight);
+
+  --text-headline-sm: var(--text-headline-sm);
+  --text-headline-sm--line-height: var(--text-headline-sm--line-height);
+  --text-headline-sm--font-weight: var(--text-headline-sm--font-weight);
+
+  /* ************************************************* */
+  /* title font sizes */
+  /* ************************************************* */
+
+  --text-title-lg: var(--text-title-lg);
+  --text-title-lg--line-height: var(--text-title-lg--line-height);
+  --text-title-lg--font-weight: var(--text-title-lg--font-weight);
+
+  --text-title: var(--text-title);
+  --text-title--line-height: var(--text-title--line-height);
+  --text-title--font-weight: var(--text-title--font-weight);
+
+  --text-title-sm: var(--text-title-sm);
+  --text-title-sm--line-height: var(--text-title-sm--line-height);
+  --text-title-sm--font-weight: var(--text-title-sm--font-weight);
+
+  /* ************************************************* */
+  /* label font sizes */
+  /* ************************************************* */
+
+  --text-label-xl: var(--text-label-xl);
+  --text-label-xl--line-height: var(--text-label-xl--line-height);
+  --text-label-xl--letter-spacing: var(--text-label-xl--letter-spacing);
+
+  --text-label-lg: var(--text-label-lg);
+  --text-label-lg--line-height: var(--text-label-lg--line-height);
+  --text-label-lg--letter-spacing: var(--text-label-lg--letter-spacing);
+
+  --text-label: var(--text-label);
+  --text-label--line-height: var(--text-label--line-height);
+  --text-label--letter-spacing: var(--text-label--letter-spacing);
+
+  --text-label-sm: var(--text-label-sm);
+  --text-label-sm--line-height: var(--text-label-sm--line-height);
+  --text-label-sm--letter-spacing: var(--text-label-sm--letter-spacing);
+
+  /* ************************************************* */
+  /* caption font sizes */
+  /* ************************************************* */
+
+  --text-caption: var(--text-caption);
+  --text-caption--line-height: var(--text-caption--line-height);
+  --text-caption--font-weight: var(--text-caption--font-weight);
+  --text-caption--letter-spacing: var(--text-caption--letter-spacing);
+
+  --text-caption-sm: var(--text-caption-sm);
+  --text-caption-sm--line-height: var(--text-caption-sm--line-height);
+  --text-caption-sm--font-weight: var(--text-caption-sm--font-weight);
+  --text-caption-sm--letter-spacing: var(--text-caption-sm--letter-spacing);
+
+  --color-sidebar-ring: var(--primary);
+  --color-sidebar-border: var(--stroke);
+  --color-sidebar-accent-foreground: var(--foreground);
+  --color-sidebar-accent: var(--hover);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-foreground: var(--high-emphasis);
+  --color-sidebar: var(--middle-surface);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground text-base font-sans antialiased;
+  }
+
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--stroke);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--chart-green-600);
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--stroke) transparent;
+  }
+}

@@ -4,13 +4,23 @@ import { TemplateCarousel } from "../../components/ui/TemplateCarousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Template images for carousel (reusing existing + can add CPM-specific later)
+// Template images for carousel
 const TEMPLATES = [
-    { src: "/design-system/cpm.png", title: "CPM Dashboard" },
-    { src: "/design-system/dashboard-cpm.png", title: "CPM Analytics" },
-    { src: "/design-system/table.png", title: "Data Table" },
-    { src: "/design-system/widget-table.png", title: "Table Widget" },
-    { src: "/design-system/widget-goal.png", title: "Goal Tracker" },
+    { src: "/cpm/01.png", title: "Screen 01" },
+    { src: "/cpm/02.png", title: "Screen 02" },
+    { src: "/cpm/03.png", title: "Screen 03" },
+    { src: "/cpm/04.png", title: "Screen 04" },
+    { src: "/cpm/05.png", title: "Screen 05" },
+    { src: "/cpm/06.png", title: "Screen 06" },
+    { src: "/cpm/07.png", title: "Screen 07" },
+    { src: "/cpm/08.png", title: "Screen 08" },
+    { src: "/cpm/09.png", title: "Screen 09" },
+    { src: "/cpm/10.png", title: "Screen 10" },
+    { src: "/cpm/11.png", title: "Screen 11" },
+    { src: "/cpm/a01.png", title: "Screen a01" },
+    { src: "/cpm/a02.png", title: "Screen a02" },
+    { src: "/cpm/a03.png", title: "Screen a03" },
+    { src: "/cpm/a04.png", title: "Screen a04" },
 ];
 
 // KPI Tile Component
@@ -57,7 +67,7 @@ function ArchetypeTile({
             <div 
                 className="absolute inset-0 z-10"
                 style={{
-                    background: "radial-gradient(circle at 70% 30%, rgba(23,23,23,0.05) 0%, rgba(23,23,23,1) 100%)",
+                    background: "radial-gradient(circle at 70% 30%, rgba(23,23,23,0.05) 0%, rgba(23,23,23,0.6) 100%)",
                 }}
             />
             {/* Content */}
@@ -78,11 +88,13 @@ function VideoCard({
     title, 
     description, 
     imageSrc,
+    videoSrc,
     variant = "default"
 }: { 
     title: string; 
     description: string; 
     imageSrc?: string;
+    videoSrc?: string;
     variant?: "default" | "beige";
 }) {
     const bgClass = variant === "beige" 
@@ -99,7 +111,19 @@ function VideoCard({
                     {description}
                 </p>
             </div>
-            {imageSrc && (
+            {videoSrc ? (
+                <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-neutral-200">
+                    <iframe 
+                        src={videoSrc}
+                        title={title}
+                        className="absolute top-0 left-0 w-full h-full"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                    />
+                </div>
+            ) : imageSrc && (
                 <div className="relative aspect-[1158/862] w-full rounded-lg overflow-hidden bg-neutral-200">
                     <Image
                         src={imageSrc}
@@ -146,7 +170,7 @@ export default function CreditPortfolioMonitoringPage() {
             </section>
 
             {/* 2. Problem Statement Section (Dark) */}
-            <section className="bg-[var(--foreground)] text-white py-36 px-14">
+            <section className="bg-[#171717] text-white py-36 px-14">
                 <div className="max-w-[610px] mx-auto space-y-8">
                     <p className="text-xl leading-relaxed">
                         Banks use this tool to handle risky loans (distressed positions). It helps teams spot early warning signs, understand why a loan is in trouble, and choose the next step.
@@ -161,7 +185,7 @@ export default function CreditPortfolioMonitoringPage() {
             </section>
 
             {/* 3. Goal Section with KPI Cards */}
-            <section className="relative bg-[var(--foreground)] min-h-[960px] overflow-hidden flex flex-col justify-start items-center">
+            <section className="relative bg-[#171717] min-h-[960px] overflow-hidden flex flex-col justify-start items-center">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -175,7 +199,7 @@ export default function CreditPortfolioMonitoringPage() {
                 <div 
                     className="absolute inset-0 z-10"
                     style={{
-                        background: "linear-gradient(to bottom, var(--foreground) 15%, rgba(23,23,23,0.05) 40%, var(--foreground) 85%)",
+                        background: "linear-gradient(to bottom, #171717 15%, rgba(23,23,23,0.05) 40%, #171717 85%)",
                     }}
                 />
                 
@@ -252,21 +276,21 @@ export default function CreditPortfolioMonitoringPage() {
                                 <ArchetypeTile
                                     title="Loan Manager"
                                     description="Handles individual distressed loans. Analyzes causes, assesses risk, and defines whether to stabilize, restructure, or exit."
-                                    bgImage="/design-system/dashboard-cpm.png"
+                                    bgImage="/cpm/loanManger.png"
                                 />
                             </div>
                             <div className="flex-1">
                                 <ArchetypeTile
                                     title="Portfolio Manager"
                                     description="Manages a pipeline of distressed loans. Balances risk, resources, and time across multiple cases."
-                                    bgImage="/design-system/dashboard-powerbiz.png"
+                                    bgImage="/cpm/hero-v2.png"
                                 />
                             </div>
                             <div className="flex-1">
                                 <ArchetypeTile
                                     title="Head of business"
                                     description="Oversees portfolio strategy. Defines policies, allocates resources, and monitors high-level performance."
-                                    bgImage="/design-system/cpm.png"
+                                    bgImage="/cpm/HoB.png"
                                 />
                             </div>
                         </div>
@@ -362,21 +386,21 @@ export default function CreditPortfolioMonitoringPage() {
                         <VideoCard
                             title="Loan manager overview"
                             description="This video shows the high-fidelity prototype that has been built, which represents the main feature of the tool for the loan manager."
-                            imageSrc="/design-system/dashboard-cpm.png"
+                            videoSrc="https://www.youtube.com/embed/PLZpMINtvmg?si=nCHm5F-8m0RjvSlJ"
                         />
                         <VideoCard
                             title="Test and iterate"
                             description="The prototyping phase served as a critical idea validation tool. It allowed us to test concepts with real users and gather feedback that directly informed subsequent iterations. This iterative process of prototyping and testing ensured that the final product would meet the needs and expectations of our users.
 
 Video of the prototype demonstrating the user workflow and essential functions of the dashboard feature for the Head of Business tool."
-                            imageSrc="/design-system/cpm.png"
+                            videoSrc="https://www.youtube.com/embed/FlJzjo3AJ5E?si=HSp21BJQs1sTpZQL"
                         />
                         <VideoCard
                             title="Prototyping"
                             description="Prototyping is integral to my design methodology, enabling collaborative feature development and co-design of the product. These prototypes facilitated clearer communication between team members and stakeholders, giving everyone a clear understanding of the product's design intent and functionality.
 
 The benefits of the design work were many. Not only did it improve internal communication and align our team's vision, but it also significantly accelerated our time to market. By identifying and addressing potential issues early in the development cycle, we streamlined the entire design and development process, paving the way for a more efficient and effective product launch."
-                            imageSrc="/design-system/dashboard-powerbiz.png"
+                            videoSrc="https://www.youtube.com/embed/dBuIoqBSNhk?si=7I-RBntnqBxeRYL_"
                             variant="beige"
                         />
                     </div>

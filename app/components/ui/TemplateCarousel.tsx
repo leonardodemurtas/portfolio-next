@@ -35,22 +35,23 @@ export const TemplateCarousel = ({ slides }: TemplateCarouselProps) => {
     const scrollTo = useCallback((index: number) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
 
     return (
-        <div className="w-full flex flex-col items-center bg-[#F3F1E7]">
+        <div className="w-full flex flex-col items-center">
             
             {/* Carousel Content */}
-            <div className="w-full flex justify-center overflow-hidden -mt-[112px] relative z-10">
+            <div className="w-full flex justify-center overflow-hidden -mt-[112px] pt-14 relative z-10">
                 <div className="w-full max-w-[1200px] px-6 md:px-12">
                     <div className="overflow-hidden p-4" ref={emblaRef}>
                         <div className="flex touch-pan-y">
                             {slides.map((slide, index) => (
-                                <div key={index} className="flex-[0_0_100%] min-w-0 relative aspect-[16/9] overflow-hidden">
-                                    <Image
-                                        src={slide.src}
-                                        alt={slide.title}
-                                        fill
-                                        className="object-contain"
-                                        priority={index === 0}
-                                    />
+                                <div key={index} className="flex-[0_0_100%] min-w-0 relative h-fit overflow-hidden">
+<Image
+    src={slide.src}
+    alt={slide.title}
+    width={1200}
+    height={800}
+    className="object-contain w-full h-auto"
+    priority={index === 0}
+/>
                                 </div>
                             ))}
                         </div>
@@ -59,7 +60,7 @@ export const TemplateCarousel = ({ slides }: TemplateCarouselProps) => {
             </div>
 
             {/* Header Navigation */}
-            <div className="w-full flex items-center justify-between px-6 py-8 md:py-12">
+            <div className="w-full flex items-center justify-between px-6">
                 <button 
                     onClick={scrollPrev}
                     className="p-2 hover:bg-neutral-100 rounded-full transition-colors"
@@ -82,7 +83,7 @@ export const TemplateCarousel = ({ slides }: TemplateCarouselProps) => {
             </div>
 
             {/* Dots Indicators */}
-            <div className="flex justify-center gap-3 py-2 md:pb-12 ">
+            <div className="flex justify-center gap-3 py-2">
                 {slides.map((_, index) => (
                     <button
                         key={index}
