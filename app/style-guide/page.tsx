@@ -216,21 +216,25 @@ export default function StyleGuidePage() {
                                 <div className="w-full h-20 rounded-xl bg-neutral-50 border border-neutral-200 mb-3"></div>
                                 <p className="font-medium text-sm">Neutral 50</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">neutral-50</code>
+                                <p className="text-xs text-neutral-500 mt-1">#FAFAFA</p>
                             </div>
                             <div className="p-4 bg-neutral-50 rounded-2xl">
                                 <div className="w-full h-20 rounded-xl bg-neutral-500 mb-3"></div>
                                 <p className="font-medium text-sm">Neutral 500</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">neutral-500</code>
+                                <p className="text-xs text-neutral-500 mt-1">#737373</p>
                             </div>
                             <div className="p-4 bg-neutral-50 rounded-2xl">
                                 <div className="w-full h-20 rounded-xl bg-neutral-600 mb-3"></div>
                                 <p className="font-medium text-sm">Neutral 600</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">neutral-600</code>
+                                <p className="text-xs text-neutral-500 mt-1">#525252</p>
                             </div>
                             <div className="p-4 bg-neutral-50 rounded-2xl">
                                 <div className="w-full h-20 rounded-xl bg-neutral-900 mb-3"></div>
                                 <p className="font-medium text-sm">Neutral 900</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">neutral-900</code>
+                                <p className="text-xs text-neutral-500 mt-1">#171717</p>
                             </div>
                         </div>
                     </div>
@@ -243,21 +247,25 @@ export default function StyleGuidePage() {
                                 <div className="w-full h-20 rounded-xl bg-neutral-900/5 border border-neutral-200 mb-3"></div>
                                 <p className="font-medium text-sm">5% Opacity</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">neutral-900/5</code>
+                                <p className="text-xs text-neutral-500 mt-1">rgba(23, 23, 23, 0.05)</p>
                             </div>
                             <div className="p-4 bg-neutral-50 rounded-2xl">
                                 <div className="w-full h-20 rounded-xl bg-black/20 mb-3"></div>
                                 <p className="font-medium text-sm">20% Opacity</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">black/20</code>
+                                <p className="text-xs text-neutral-500 mt-1">rgba(0, 0, 0, 0.2)</p>
                             </div>
                             <div className="p-4 bg-neutral-50 rounded-2xl">
                                 <div className="w-full h-20 rounded-xl bg-black/60 mb-3"></div>
                                 <p className="font-medium text-sm">60% Opacity</p>
                                 <code className="text-xs bg-neutral-200 px-2 py-1 rounded">black/60</code>
+                                <p className="text-xs text-neutral-500 mt-1">rgba(0, 0, 0, 0.6)</p>
                             </div>
                             <div className="p-4 bg-neutral-900 rounded-2xl">
                                 <div className="w-full h-20 rounded-xl bg-white/30 mb-3"></div>
                                 <p className="font-medium text-sm text-white">30% White</p>
                                 <code className="text-xs bg-white/20 text-white px-2 py-1 rounded">white/30</code>
+                                <p className="text-xs text-neutral-400 mt-1">rgba(255, 255, 255, 0.3)</p>
                             </div>
                         </div>
                     </div>
