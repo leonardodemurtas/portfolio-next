@@ -17,19 +17,12 @@ export function Header() {
                             priority
                         />
                     </div>
-                    <span className="text-xl font-bold tracking-tighter text-neutral-900">
+                    <span className="text-xl font-bold tracking-tighter text-white">
                         Leonardo.
                     </span>
                 </Link>
 
                 {/* Right Actions */}
-                <Link
-                    href="https://www.linkedin.com"
-                    target="_blank"
-                    className="text-sm font-medium text-neutral-500 hover:text-neutral-900 transition-colors underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900"
-                >
-                    LinkedIn
-                </Link>
             </div>
         </header>
     );
