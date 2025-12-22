@@ -16,7 +16,7 @@ const TEMPLATES = [
 // KPI Tile Component
 function KpiTile({ value, label }: { value: string; label: string }) {
     return (
-        <div className="backdrop-blur-md border border-white/10 rounded-2xl p-5 pt-6 pb-4 w-full max-w-[304px]"
+        <div className="backdrop-blur-md border border-white/10 rounded-2xl p-5 pt-6 pb-4 w-full"
             style={{
                 background: "linear-gradient(137deg, rgba(255,255,255,0.06) 0%, rgba(23,23,23,0.01) 93%)",
             }}>
@@ -193,7 +193,7 @@ export default function CreditPortfolioMonitoringPage() {
                     </div>
 
                     {/* KPI Cards */}
-                    <div className="flex flex-wrap justify-center gap-6 px-20 mb-16">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-20 mb-16 w-full max-w-[1200px]">
                         <KpiTile value="7" label="Time to concept approval" />
                         <KpiTile value="+50%" label="Redesign time reduced" />
                         <KpiTile value="3" label="New archetypes" />
