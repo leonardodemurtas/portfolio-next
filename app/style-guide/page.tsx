@@ -269,6 +269,85 @@ export default function StyleGuidePage() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Text Colors */}
+                    <div className="mt-12">
+                        <h3 className="text-xl font-medium text-neutral-900 mb-4">Text Colors</h3>
+                        <div className="space-y-8">
+                            {/* Semantic Text Colors */}
+                            <div>
+                                <h4 className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-4">Semantic Usage</h4>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                    <div className="p-6 bg-neutral-50 rounded-2xl">
+                                        <p className="text-2xl font-bold text-neutral-900 mb-2">Primary Text</p>
+                                        <p className="text-sm text-neutral-600 mb-3">Used for headings and main content</p>
+                                        <code className="text-xs bg-neutral-200 px-2 py-1 rounded">text-neutral-900</code>
+                                    </div>
+                                    <div className="p-6 bg-neutral-50 rounded-2xl">
+                                        <p className="text-2xl font-medium text-neutral-600 mb-2">Secondary Text</p>
+                                        <p className="text-sm text-neutral-600 mb-3">Used for body text and descriptions</p>
+                                        <code className="text-xs bg-neutral-200 px-2 py-1 rounded">text-neutral-600</code>
+                                    </div>
+                                    <div className="p-6 bg-neutral-50 rounded-2xl">
+                                        <p className="text-2xl font-medium text-neutral-500 mb-2">Muted Text</p>
+                                        <p className="text-sm text-neutral-600 mb-3">Used for metadata and hints</p>
+                                        <code className="text-xs bg-neutral-200 px-2 py-1 rounded">text-neutral-500</code>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Neutral Scale */}
+                            <div>
+                                <h4 className="text-sm font-medium text-neutral-500 uppercase tracking-wider mb-4">Neutral Scale</h4>
+                                <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-50 bg-neutral-900 p-1 rounded inline-block mb-2">Neutral 50</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-50</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-100 bg-neutral-900 p-1 rounded inline-block mb-2">Neutral 100</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-100</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-200 bg-neutral-900 p-1 rounded inline-block mb-2">Neutral 200</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-200</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-300 mb-2">Neutral 300</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-300</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-400 mb-2">Neutral 400</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-400</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-500 mb-2">Neutral 500</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-500</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-600 mb-2">Neutral 600</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-600</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-700 mb-2">Neutral 700</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-700</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-800 mb-2">Neutral 800</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-800</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-900 mb-2">Neutral 900</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-900</code>
+                                    </div>
+                                    <div className="p-4 bg-white border border-neutral-100 rounded-xl">
+                                        <p className="text-lg font-medium text-neutral-950 mb-2">Neutral 950</p>
+                                        <code className="text-xs block text-neutral-400">text-neutral-950</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Border Radius Section */}
@@ -520,3 +599,4 @@ export default function StyleGuidePage() {
         </div>
     );
 }
+

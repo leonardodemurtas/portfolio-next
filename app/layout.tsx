@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 
 
 import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
 
 export default function RootLayout({
   children,
@@ -43,7 +42,6 @@ export default function RootLayout({
           <main className="flex-grow w-full mx-auto">
             {children}
           </main>
-          <Footer />
         </div>
       </body>
     </html>

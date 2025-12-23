@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { TemplateCarousel } from "../../components/ui/TemplateCarousel";
+import { Footer } from "../../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -170,7 +171,7 @@ export default function CreditPortfolioMonitoringPage() {
             </section>
 
             {/* 2. Problem Statement Section (Dark) */}
-            <section className="bg-[#171717] text-white py-36 px-14">
+            <section className="bg-[var(--foreground)] text-white py-36 px-14">
                 <div className="max-w-[610px] mx-auto space-y-8">
                     <p className="text-xl leading-relaxed">
                         Banks use this tool to handle risky loans (distressed positions). It helps teams spot early warning signs, understand why a loan is in trouble, and choose the next step.
@@ -185,7 +186,7 @@ export default function CreditPortfolioMonitoringPage() {
             </section>
 
             {/* 3. Goal Section with KPI Cards */}
-            <section className="relative bg-[#171717] min-h-[960px] overflow-hidden flex flex-col justify-start items-center">
+            <section className="relative bg-[var(--foreground)] min-h-[960px] overflow-hidden flex flex-col justify-start items-center">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -199,7 +200,7 @@ export default function CreditPortfolioMonitoringPage() {
                 <div 
                     className="absolute inset-0 z-10"
                     style={{
-                        background: "linear-gradient(to bottom, #171717 15%, rgba(23,23,23,0.05) 40%, #171717 85%)",
+                        background: "linear-gradient(to bottom, var(--foreground) 15%, rgba(23,23,23,0.05) 40%, var(--foreground) 85%)",
                     }}
                 />
                 
@@ -451,6 +452,7 @@ The benefits of the design work were many. Not only did it improve internal comm
                     </p>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }
