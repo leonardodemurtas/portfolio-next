@@ -371,14 +371,11 @@ export default function DesignSystemPage() {
                     <h3 className="text-2xl font-semibold text-neutral-400 mb-8">
                         REFLECTION AND FUTURE DIRECTIONS
                     </h3>
-                    <h4 className="text-xl font-semibold text-white mb-8">
-                        Main Challenges
-                    </h4>
-
+                   
                     {/* Challenges */}
                     <div className="space-y-8 mb-12">
                         <div>
-                            <p className="text-lg text-neutral-400 leading-relaxed">
+                            <p className="text-xl text-neutral-200 leading-relaxed">
                                 This project had a profound impact on my professional skills, expanding my strategic thinking and ability to design scalable solutions. As the design lead, I developed a broader perspective, moving beyond immediate problem-solving to a more strategic approach to design.
                             </p>
                         </div>
@@ -394,10 +391,7 @@ export default function DesignSystemPage() {
                         </div>
                     </div>
 
-                    {/* Closing paragraph */}
-                    <p className="text-xl text-white leading-relaxed">
-                        This project profoundly impacted my development as a product designer, enhancing my ability to empathize with users, navigate team dynamics, and champion user-centric solutions. It has refined my design thinking and problem-solving skills, setting a new benchmark for my future projects.
-                    </p>
+                    
                 </div>
             </section>
             <Footer/>
