@@ -15,9 +15,8 @@ export function FeaturedProjects() {
 
             <div className="space-y-8 md:space-y-16">
                 {featuredProjects.map((project, idx) => (
-                    <Link
+                    <div
                         key={project.slug}
-                        href={`/featured/${project.slug}`}
                         className="group relative block w-full aspect-video rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
                     >
                         {/* Background Image */}
@@ -38,18 +37,21 @@ export function FeaturedProjects() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-500" />
 
                         {/* Content */}
-                        <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end items-start">
+                        <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end items-start pointer-events-none">
                             <div className="max-w-2xl space-y-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                                 <h3 className="text-3xl md:text-5xl font-medium text-white leading-tight drop-shadow-sm">
                                     {project.cardHeadline || project.title}
                                 </h3>
 
-                                <div className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-medium tracking-wide group-hover:bg-white group-hover:text-black hover:border-white transition-all duration-300">
+                                <Link
+                                    href={`/featured/${project.slug}`}
+                                    className="pointer-events-auto inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-medium tracking-wide group-hover:bg-white group-hover:text-black hover:border-white transition-all duration-300"
+                                >
                                     View work
-                                </div>
+                                </Link>
                             </div>
                         </div>
-                    </Link>
+                    </div>
                 ))}
             </div>
         </section>

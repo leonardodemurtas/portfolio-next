@@ -1,8 +1,13 @@
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export function Header() {
+    const pathname = usePathname();
+    const isHomePage = pathname === "/";
+
     return (
         <header className="absolute top-0 left-0 right-0 z-50 py-8 px-6 md:px-12">
             <div className="max-w-[90rem] mx-auto w-full flex items-center justify-between">
@@ -17,7 +22,7 @@ export function Header() {
                             priority
                         />
                     </div>
-                    <span className="text-xl font-bold tracking-tighter text-white">
+                    <span className={`text-xl font-bold tracking-tighter ${isHomePage ? "text-neutral-700" : "text-neutral-50"}`}>
                         Leonardo.
                     </span>
                 </Link>
