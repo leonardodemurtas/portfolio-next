@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Carousel, CarouselSlide } from "../../components/ui/Carousel";
 import { TemplateCarousel } from "../../components/ui/TemplateCarousel";
+import { Footer } from "../../components/Footer";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,8 +22,8 @@ export default function DesignSystemPage() {
         <div className="w-full">
             {/* 1. Hero Section */}
             <section className="relative h-[85vh] min-h-[600px] w-full bg-[#040B16] text-white overflow-hidden">
-                {/* Background Image Placeholder */}
                 
+                {/* Background Image Placeholder */}
                 <div className="absolute inset-0 z-0 opacity-60">
                     <Image
                         src="/design-system-hero.png"
@@ -33,9 +34,9 @@ export default function DesignSystemPage() {
                     />
                 </div>
 
-                <div className="relative z-20 w-full flex items-end justify-start h-full px-6 md:px-12">
-                    <div className="max-w-4xl">
-                        <h1 className={`${inter.className} text-[52px] font-bold tracking-tight leading-[0.9] mb-8`} style={{ fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif' }}>
+                <div className="relative z-20 w-full flex items-end justify-center h-full px-6 md:px-12">
+                    <div className="w-full max-w-[1200px]">
+                        <h1 className={`${inter.className} text-6xl leading-[0.9] font-bold tracking-tight mb-8`} style={{ fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, sans-serif' }}>
                             Ship enterprise-grade
                             <br />
                             experiences consistently
@@ -44,20 +45,11 @@ export default function DesignSystemPage() {
                 </div>
             </section>
 
-            {/* 2. Intro & Stats Section - Dark Theme */}
-            <section className="relative bg-[#040B16] text-white py-8 px-6 md:px-12 text-center flex flex-col justify-end items-center w-full overflow-hidden gap-[204px] h-fit">
-                <div className="absolute inset-0 z-0 w-full flex flex-col justify-end items-center">
-                    <img
-                        src="/design-system/Goal-2.png"
-                        alt="Background"
-                        className="object-cover opacity-100"
-                        style={{ width: 'fit-content' }}
-                    />
-                    <div className="absolute inset-0 bg-[#040B16]/30" />
-                </div>
+            {/* 2. Problem */}
+            <section className="relative bg-[#040B16] text-white pt-8 px-6 md:px-12 text-center flex flex-col justify-end items-center w-full overflow-hidden gap-[204px] h-fit">
                 
-                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full justify-start gap-4 items-center pt-12">
-                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pb-[163px]">
+                <div className="relative z-10 max-w-[90rem] mx-auto flex flex-col w-full justify-start gap-4 items-center pt-6">
+                    <div className="space-y-8 max-w-[610px] text-left flex flex-col justify-start items-start w-full pt-[163px] pb-[163px]">
                         <p className="text-xl md:text-2xl leading-relaxed text-neutral-300 w-full">
                             In 2024, after various acquisitions, the organization found itself with a product suite with 7 different tools.
                         </p>
@@ -73,18 +65,38 @@ export default function DesignSystemPage() {
                             I'm super proud of what we created.
                         </p>
                     </div>
+                </div>
+            </section>
 
-                    <div className="space-y-8 max-w-[610px] text-left w-full mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-left w-full pb-[280px]">
-                            One system.
-                            <br />
-                            Many brands.
-                            <br />
-                            Faster delivery.
-                        </h2>                        
-                    </div> 
+            
+            <section className="relative text-white px-0 py-0 text-center flex flex-col justify-start items-center w-full overflow-hidden gap-[204px] h-fit">
+                <div className="absolute bg-color-black w-full flex flex-col items-center justify-end">
+                    <img
+                        src="/design-system/KPI-bg.jpg"
+                        alt="Background"
+                        className="object-cover opacity-100"
+                        style={{ width: 'fit-content' }}
+                    />
+                    <div className="absolute inset-0 bg-[#040B16]/30" />
+                </div>
 
-                    <div className="mx-auto flex flex-col w-full">
+                <div className="relative z-10 max-w-[90rem] mx-auto md-0 flex flex-col w-full justify-start  items-center pt-0">
+                    
+                    <div className="w-full flex flex-col items-center justify-center p-0 m-0 " style={{ background: 'linear-gradient(180deg, #040B16 0%, rgba(4, 11, 22, 0.00) 100%)' }}>
+                        <div className="max-w-[610px] text-left w-full h-fit ">
+
+                            <h2 className="text-4xl md:text-5xl font-bold text-left w-full pb-[280px]">
+                                One system.
+                                <br />
+                                Many brands.
+                                <br />
+                                Faster delivery.
+                            </h2>  
+
+                        </div> 
+                    </div>
+
+                    <div className="mx-auto flex flex-col w-full px-6 md:px-12">
                         <div className="flex flex-col gap-16 md:gap-32">
                             <div className="flex flex-col w-full">
                                 <div className="flex flex-row w-full gap-6">
@@ -112,60 +124,75 @@ export default function DesignSystemPage() {
                             </div>                        
                         </div>
                     </div>
-
-                    <div className="space-y-8 max-w-[610px] text-left mt-12">
-                        <p className="text-lg leading-relaxed text-neutral-400">
-                            CPM and Finbox were the first products to ship on the new design system. I led design on CPM and used it to harden patterns, starting with the dashboard template. The templates and color system now anchor delivery and improve UX across teams.
-                        </p>
+                    <div className="flex flex-col items-center justify-center  w-full" style={{ background: 'linear-gradient(180deg, rgba(4, 11, 22, 0.00) 0%, #040B16 100%)' }}>
+                        <div className="w-full max-w-[610px] text-left py-24 ">
+                            <p className="text-lg leading-relaxed text-neutral-200">
+                                CPM and Finbox were the first products to ship on the new design system. I led design on CPM and used it to harden patterns, starting with the dashboard template. The templates and color system now anchor delivery and improve UX across teams.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                
+                
             </section>
 
+            
+
+            
+
             {/* 3. Shaping the system - Light Theme */}
-            <section className="bg-[#fcfbf9] text-neutral-900 md:py-32 px-0">
-                <div className="w-full flex flex-col justify-start items-center">
+            <section className="bg-[#fcfbf9] text-neutral-900 md:py-32 px-0 gap-0">
+                <div className="w-full flex flex-col justify-start items-center gap-0">
                     {/* Header */}
-                    <div className="max-w-3xl">
-                        <h2 className="text-3xl md:text-4xl font-medium mb-6">Shaping the design system</h2>
-                        <p className="text-xl text-neutral-600 leading-relaxed">
-                            I led the creation of a design system that serves multiple business units.
-                            We kicked off by auditing existing products, identifying common components,
-                            and defining a shared language for colors, type, and interaction.
-                        </p>
+                    <div className="w-full mx-auto md-0 flex flex-col w-full justify-start  items-center pt-0">   
+                        <div className="w-full max-w-[610px] pb-24">
+                            <h2 className="text-3xl md:text-4xl font-medium mb-6">Shaping the design system</h2>
+                            <p className="text-xl text-neutral-600 leading-relaxed">
+                                I led the creation of a design system that serves multiple business units.
+                                We kicked off by auditing existing products, identifying common components,
+                                and defining a shared language for colors, type, and interaction.
+                            </p>
+                        </div>
                     </div>
+                    
 
                     {/* Laying the groundwork */}
-                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] w-full p-12 pt-20 mb-16">
-                        <h3 className="text-3xl px-12 font-semibold leading-tight mb-12">Laying the groundwork</h3>
-
-                        <div className="flex flex-row justify-between mb-12 items-center w-full">
-                            <div className="flex flex-row gap-6"></div>
-                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
-                                <Image src="/design-system/logo-material.png" alt="Material" width={64} height={64} className="object-contain" />
+                    <div className="bg-[#f0ede6] rounded-3xl max-w-[1200px] w-full p-0 pt-20 mb-2">
+                        <div className="w-full flex flex-col items-center align-center gap-0 mb-0"> 
+                            <div className="w-full max-w-[610px] mb-0 "> 
+                                <h3 className="text-3xl font-semibold leading-tight mb-12">Laying the groundwork</h3>
+                                <div className="flex flex-row mb-12 justify-between items-cente w-full">
+                                    
+                                    <div className="aspect-square rounded-2xl flex items-center justify-center ">
+                                        <Image src="/design-system/logo-material.png" alt="Material" width={64} height={64} className="object-contain" />
+                                    </div>
+                                    <div className="aspect-square rounded-2xl flex items-center justify-center ">
+                                        <Image src="/design-system/logo-apple.png" alt="Apple" width={64} height={64} className="object-contain" />
+                                    </div>
+                                    <div className="aspect-square rounded-2xl flex items-center justify-center ">
+                                        <Image src="/design-system/logo-carbon.png" alt="Carbon" width={64} height={64} className="object-contain" />
+                                    </div>
+                                    <div className="aspect-square rounded-2xl flex items-center justify-center">
+                                        <Image src="/design-system/logo-fluent.png" alt="Fluent" width={64} height={64} className="object-contain" />
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
-                                <Image src="/design-system/logo-apple.png" alt="Apple" width={64} height={64} className="object-contain" />
+                            
+                            <div className="max-w-[610px] mb-2 text-lg text-neutral-700 ">
+                                <p>
+                                    I studied top design systems (Material 3, Carbon, Fluent, Apple) to find patterns that worked for enterprise data.
+                                    We needed a system that was dense enough for complex tables but spacious enough for readability.
+                                </p>
+                                <p className="py-10 font-normal">
+                                    WHY MATERIAL DESIGN?
+                                </p>
                             </div>
-                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
-                                <Image src="/design-system/logo-carbon.png" alt="Carbon" width={64} height={64} className="object-contain" />
-                            </div>
-                            <div className="aspect-square rounded-2xl flex items-center justify-center p-8">
-                                <Image src="/design-system/logo-fluent.png" alt="Fluent" width={64} height={64} className="object-contain" />
-                            </div>
-                            <div className="flex flex-row gap-6"></div>
+                            
                         </div>
+                        
 
-                        <div className="max-w-3xl mb-16 px-12 text-lg text-neutral-700">
-                            <p>
-                                I studied top design systems (Material 3, Carbon, Fluent, Apple) to find patterns that worked for enterprise data.
-                                We needed a system that was dense enough for complex tables but spacious enough for readability.
-                            </p>
-                            <p className="mt-4 font-bold">
-                                WHY MATERIAL DESIGN?
-                            </p>
-                        </div>
-
-                        <div className="flex flex-col md:flex-row gap-6">
+                        <div className="flex flex-col md:flex-row mx-12 mb-12 gap-6 ">
                             <div className="bg-[#e8e4db] w-full p-8 rounded-2xl flex flex-col justify-between transition-colors hover:bg-[#dcd8cf]">
                                 <div className="w-full flex justify-center items-center mb-6">
                                     <Image src="/design-system/img-1.png" alt="Material" width={160} height={180} className="" />
@@ -186,26 +213,33 @@ export default function DesignSystemPage() {
                     </div>
 
                     {/* Principles */}
-                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] w-full p-12 pt-20 mb-16">
-                        <h3 className="text-3xl px-12 text-neutral-900 font-semibold leading-tight mb-6">The rules that made decisions faster</h3>
-                        <p className="max-w-3xl px-12 text-lg text-neutral-600 mb-12">
-                            To guide our component choices, we established three core principles.
-                            Whenever we had a debate, we returned to these:
-                        </p>
+                    <div className="bg-[#e6f0ed] rounded-3xl max-w-[1200px] w-full flex flex-col items-center align-center justify-center p-12 pt-20 my-8">
+                        <div className="w-full mb-0"> 
+                            <div className="w-full flex flex-col items-center align-center justify-center">
+                                <div className="w-full max-w-[610px] px-0 mb-0"> 
+                                    <h3 className="text-3xl text-neutral-900 font-semibold leading-tight mb-6">The rules that made decisions faster</h3>
+                                    <p className="max-w-3xl text-lg text-neutral-600 mb-12">
+                                        To guide our component choices, we established three core principles.
+                                        Whenever we had a debate, we returned to these:
+                                    </p>
+                                </div>
+                            </div>                        
 
-                        <div className="flex flex-col md:flex-row gap-6 w-full">
-                            <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between transition-colors hover:bg-[#bce0d8]">
-                                <Image src="/design-system/img-05.png" alt="Don't Make Me Think" width={280} height={140} className="w-full" />
-                                <h4 className="text-xl font-bold text-[#1a4d42]">Don't Make Me Think</h4>
+                            <div className="flex flex-col md:flex-row gap-6 w-full">
+                                <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between transition-colors hover:bg-[#bce0d8]">
+                                    <Image src="/design-system/img-05.png" alt="Don't Make Me Think" width={280} height={140} className="w-full" />
+                                    <h4 className="text-xl font-bold text-[#1a4d42]">Don't Make Me Think</h4>
+                                </div>
+                                <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
+                                    <Image src="/design-system/img-04.png" alt="Help the User to Get It Done" width={280} height={140} className="w-full" />
+                                    <h4 className="text-xl font-bold text-[#1a4d42]">Help the User to Get It Done</h4>
+                                </div>
+                                <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
+                                    <Image src="/design-system/img-03.png" alt="One click away" width={280} height={140} className="w-full" />
+                                    <h4 className="text-xl font-bold text-[#1a4d42]">One click away</h4>
+                                </div>
                             </div>
-                            <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
-                                <Image src="/design-system/img-04.png" alt="Help the User to Get It Done" width={280} height={140} className="w-full" />
-                                <h4 className="text-xl font-bold text-[#1a4d42]">Help the User to Get It Done</h4>
-                            </div>
-                            <div className="bg-[#cce3de] rounded-2xl flex-1 p-8 min-h-[200px] flex flex-col justify-between hover:bg-[#bce0d8] transition-colors">
-                                <Image src="/design-system/img-03.png" alt="One click away" width={280} height={140} className="w-full" />
-                                <h4 className="text-xl font-bold text-[#1a4d42]">One click away</h4>
-                            </div>
+
                         </div>
                     </div>
 
@@ -214,27 +248,34 @@ export default function DesignSystemPage() {
                         
                         <div className="flex flex-col gap-0">
                             
-                            <div className="p-12 px-12 md:px-24 pb-0">
-                                <h3 className="text-3xl text-neutral-900 font-semibold leading-tight mb-6 ">Micro reusable decisions (Tokens & Components)</h3>
-                                <p className="text-lg text-neutral-600 mb-8">
-                                    Tokens are the atoms. We standardized the spacing scale (4px baseline),
-                                    typography (Inter), and semantic colors for risk levels (critical, warning, safe).
-                                    These tokens feed into our atomic components.
-                                </p>
+                            <div className="w-full flex flex-col items-center align-center justify-center">
+                                <div className="w-full max-w-[610px] px-0 mb-0"> 
+                                    <div className="w-full">
+                                        <h3 className="text-3xl text-neutral-900 font-semibold leading-tight mb-6 ">Micro reusable decisions (Tokens & Components)</h3>
+                                        <p className="text-lg text-neutral-600 mb-8">
+                                            Tokens are the atoms. We standardized the spacing scale (4px baseline),
+                                            typography (Inter), and semantic colors for risk levels (critical, warning, safe).
+                                            These tokens feed into our atomic components.
+                                        </p>
+                                    </div>
+                                
+                                    <div className="w-full mb-8">
+                                        <h3 className="text-2xl text-neutral-900 font-semibold leading-tight mb-6">Building the system backbone</h3>
+                                        <p className="text-lg text-neutral-600">
+                                            I defined the architecture starting from Tokens (colors, spacing, elevation)
+                                            up to Templates. We used Figma Variables to manage themes (Light/Dark)
+                                            and density.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        
-                            <div className=" pt-6 px-12 md:px-24 pb-12">
-                                <h3 className="text-2xl text-neutral-900 font-semibold leading-tight mb-6">Building the system backbone</h3>
-                                <p className="text-lg text-neutral-600">
-                                    I defined the architecture starting from Tokens (colors, spacing, elevation)
-                                    up to Templates. We used Figma Variables to manage themes (Light/Dark)
-                                    and density.
-                                </p>
-                            </div>
+
+
+
                         
                             <div className="flex flex-col md:flex-row gap-[1px]">
                                 {/* Token Image */}
-                                <div className="overflow-hidden shadow-2xl border border-white/10 bg-[#1e1e1e] w-full md:w-[50%]">
+                                <div className="overflow-hidden border border-white/10 w-full md:w-[50%]">
                                     <Image 
                                         src="/design-system/tokens-2.png" 
                                         alt="Design Tokens Interface" 
@@ -320,22 +361,46 @@ export default function DesignSystemPage() {
                         <TemplateCarousel slides={TEMPLATES} />
                     </div>
                 </div>
-                {/* What's Next Section */}
-                <div className="px-6 md:px-12 border-t border-neutral-200 py-32">
-                            <div className="max-w-3xl">
-                                <h3 className="text-3xl font-medium mb-8">What's next?</h3>
-                                <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
-                                    As we continue to expand, we plan to incorporate:
-                                </p>
-                                <ul className="list-disc list-inside space-y-4 text-lg text-neutral-600">
-                                    <li>Dark mode support across all legacy tools</li>
-                                    <li>Accessibility (WCAG 2.1 AA) audits</li>
-                                    <li>More advanced analytics components</li>
-                                    <li>AI-driven component suggestions</li>
-                                </ul>
-                            </div>
-                        </div>
+                
+            
             </section>
+
+            {/* Reflection and future directions */}
+            <section className="bg-[var(--foreground)] py-14 px-6">
+                <div className="max-w-[610px] mx-auto">
+                    <h3 className="text-2xl font-semibold text-neutral-400 mb-8">
+                        REFLECTION AND FUTURE DIRECTIONS
+                    </h3>
+                    <h4 className="text-xl font-semibold text-white mb-8">
+                        Main Challenges
+                    </h4>
+
+                    {/* Challenges */}
+                    <div className="space-y-8 mb-12">
+                        <div>
+                            <p className="text-lg text-neutral-400 leading-relaxed">
+                                This project had a profound impact on my professional skills, expanding my strategic thinking and ability to design scalable solutions. As the design lead, I developed a broader perspective, moving beyond immediate problem-solving to a more strategic approach to design.
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-lg text-neutral-400 leading-relaxed">
+                            The design system itself has become a critical strategic asset, especially during a transformative period for the company. Its implementation has enabled rapid product development, allowing the company to quickly adapt and evolve its business model to meet the challenge of transforming from a service-based company to a product-service company.
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-lg text-neutral-400 leading-relaxed">
+                                Aligning the new product vision with the broader company strategy was critical. We worked to ensure that the redesign went beyond usability improvements to become a strategic asset that supported the bank's long-term goals and compliance requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Closing paragraph */}
+                    <p className="text-xl text-white leading-relaxed">
+                        This project profoundly impacted my development as a product designer, enhancing my ability to empathize with users, navigate team dynamics, and champion user-centric solutions. It has refined my design thinking and problem-solving skills, setting a new benchmark for my future projects.
+                    </p>
+                </div>
+            </section>
+            <Footer/>
         </div>
     );
 }

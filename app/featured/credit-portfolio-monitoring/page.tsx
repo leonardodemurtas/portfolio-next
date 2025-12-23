@@ -421,9 +421,6 @@ The benefits of the design work were many. Not only did it improve internal comm
                     {/* Challenges */}
                     <div className="space-y-8 mb-12">
                         <div>
-                            <h5 className="text-xl text-white mb-2">
-                                Integration into Ongoing Projects
-                            </h5>
                             <p className="text-lg text-neutral-400 leading-relaxed">
                                 Joining an existing project presented initial challenges, particularly in redirecting the focus from an assumption-based to a user-centric approach. Overcoming this required clear communication and strategic persuasion to realign the project goals.
                             </p>
@@ -437,11 +434,8 @@ The benefits of the design work were many. Not only did it improve internal comm
                             </p>
                         </div>
                         <div>
-                            <h5 className="text-xl text-white mb-2">
-                                Strategic Redefinition
-                            </h5>
                             <p className="text-lg text-neutral-400 leading-relaxed">
-                                Aligning the new product vision with the broader company strategy was critical. We worked to ensure that the redesign went beyond usability improvements to become a strategic asset that supported the bank's long-term goals and compliance requirements.
+                            
                             </p>
                         </div>
                     </div>
