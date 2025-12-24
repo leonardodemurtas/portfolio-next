@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Carousel, CarouselSlide } from "../../components/ui/Carousel";
-import { TemplateCarousel } from "../../components/ui/TemplateCarousel";
+import { Carousel, CarouselSlide } from "../../components/ui/LegacyCarousel";
+import { ProjectTemplatesCarousel } from "../../components/ui/ProjectTemplatesCarousel";
 import { Footer } from "../../components/Footer";
 import { Inter } from "next/font/google";
 
@@ -356,7 +356,7 @@ export default function DesignSystemPage() {
                             </p>
                         </div>
                         
-                        <TemplateCarousel slides={TEMPLATES} />
+                        <ProjectTemplatesCarousel slides={TEMPLATES} />
                     </div>
                 </div>
                 

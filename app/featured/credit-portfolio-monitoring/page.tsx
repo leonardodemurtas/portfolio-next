@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { TemplateCarousel } from "../../components/ui/TemplateCarousel";
+import { TemplateCarousel } from "../../components/ui/LegacyTemplateCarousel";
 import { Footer } from "../../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
