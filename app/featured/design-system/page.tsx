@@ -8,13 +8,11 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const TEMPLATES = [
-    { src: "/design-system/powerbiz.png", title: "Powerbix" },
+    { src: "/design-system/companysheet.png", title: "Company sheet" },
     { src: "/design-system/table.png", title: "Data Table" },
-    { src: "/design-system/cpm.png", title: "CPM Dashboard" },
-    { src: "/design-system/dashboard-cpm.png", title: "CPM Analytics" },
-    { src: "/design-system/dashboard-powerbiz.png", title: "Powerbiz Overview" },
-    { src: "/design-system/widget-table.png", title: "Table Widget" },
-    { src: "/design-system/widget-goal.png", title: "Goal Tracker" },
+    { src: "/design-system/dashboard.png", title: "Dashboard" },
+    { src: "/design-system/wizzard.png", title: "Wizzard" },
+    
 ];
 
 export default function DesignSystemPage() {

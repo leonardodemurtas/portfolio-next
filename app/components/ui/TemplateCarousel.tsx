@@ -39,19 +39,19 @@ export const TemplateCarousel = ({ slides }: TemplateCarouselProps) => {
             
             {/* Carousel Content */}
             <div className="w-full flex justify-center overflow-hidden -mt-[112px] pt-14 relative z-10">
-                <div className="w-full max-w-[1200px] px-6 md:px-12">
-                    <div className="overflow-hidden p-4" ref={emblaRef}>
-                        <div className="flex touch-pan-y">
+                <div className="w-full px-6 md:px-8">
+                    <div className="overflow-hidden flex flex-row p-0" ref={emblaRef}>
+                        <div className="flex touch-pan-y w-[1200px] -ml-6">
                             {slides.map((slide, index) => (
-                                <div key={index} className="flex-[0_0_100%] min-w-0 relative h-fit overflow-hidden">
-<Image
-    src={slide.src}
-    alt={slide.title}
-    width={1200}
-    height={800}
-    className="object-contain w-full h-auto"
-    priority={index === 0}
-/>
+                                <div key={index} className="flex-[0_0_100%] min-w-0 relative h-fit overflow-hidden pl-8">
+                                    <Image
+                                        src={slide.src}
+                                        alt={slide.title}
+                                        width={1200}
+                                        height={800}
+                                        className="object-contain w-full h-auto"
+                                        priority={index === 0}
+                                    />
                                 </div>
                             ))}
                         </div>
