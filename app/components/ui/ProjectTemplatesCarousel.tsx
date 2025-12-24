@@ -75,7 +75,7 @@ export function ProjectTemplatesCarousel({ slides }: ProjectTemplatesCarouselPro
             </div>
 
             {/* Dots Indicators */}
-            <div className="flex justify-center gap-3 py-6 mt-8">
+            <div className="flex justify-center gap-3 pb-6 pt-3 mt-0">
                 {slides.map((_, index) => (
                     <button
                         key={index}

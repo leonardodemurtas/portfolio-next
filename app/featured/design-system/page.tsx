@@ -139,7 +139,7 @@ export default function DesignSystemPage() {
             
 
             {/* 3. Shaping the system - Light Theme */}
-            <section className="bg-[#fcfbf9] text-neutral-900 md:py-32 px-0 gap-0">
+            <section className="bg-[#fcfbf9] text-neutral-900 md:pt-32 px-0 gap-0">
                 <div className="w-full flex flex-col justify-start items-center gap-0">
                     {/* Header */}
                     <div className="w-full mx-auto md-0 flex flex-col w-full justify-start  items-center pt-0">   
@@ -358,9 +358,9 @@ export default function DesignSystemPage() {
 
                     {/* Templates */}
                     <div className="w-full flex flex-col items-center justify-center bg-[#F7F5EE] py-20 pt-32 pb-0">
-                        <div className="max-w-2xl w-full md:px-12 mb-12">
+                        <div className="max-w-2xl w-full md:px-12 mb-12 h-fit">
                             <h3 className="text-3xl font-medium mb-12 text-[#1e1b4b]">Templates that get the work done</h3>
-                            <p className="text-g text-neutral-900 mb-32">
+                            <p className="text-g text-neutral-900 mb-12">
                                 Templates serve as specialized layouts for different user tasks. They include various formats such as the archive template for presenting multiple content types and the entity layout for detailed presentations of single items. These templates standardize the presentation of information, ensuring clarity and consistency across different products and scenarios.
                             </p>
                         </div>
