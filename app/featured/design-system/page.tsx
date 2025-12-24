@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Carousel, CarouselSlide } from "../../components/ui/LegacyCarousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "../../components/ui/shadcn-carousel";
 import { ProjectTemplatesCarousel } from "../../components/ui/ProjectTemplatesCarousel";
 import { Footer } from "../../components/Footer";
 import { Inter } from "next/font/google";
@@ -302,47 +302,56 @@ export default function DesignSystemPage() {
 
                     {/* Token-driven building blocks */}
                     <div className="bg-[#5A9DD13D] p-12 md:p-20 rounded-3xl space-y-12 max-w-[1200px] mb-16 w-full">
-                        <div>
+                        <div className="w-full flex flex-col items-center align-center justify-center">
+                           <div className="w-full max-w-[610px] px-0 mb-0"> 
+                            
                             <h3 className="text-3xl font-medium mb-8 text-[#1e1b4b]">Token-driven building blocks</h3>
                             <p className="max-w-2xl text-lg text-neutral-900 mb-12">
                                 Components are the UI’s building blocks. To make them read the same in light and dark, we tuned not just color but elevation, shadows, strokes, and focus states. Shadows are crisper in light and softer in dark to keep hierarchy without glare. Tokens drive these rules, so components stay consistent across modes without per-component overrides.
+                            
                             </p>
+                            </div>
                         </div>
+                        
 
                         {/* Carousel 1: Components */}
                         <div className="py-8">
                             <h4 className="text-xl font-medium mb-6">Atomic Components</h4>
-                            <Carousel options={{ align: 'start', loop: true }} className="w-full">
-                                <CarouselSlide className="flex-[0_0_80%] md:flex-[0_0_40%] pl-4">
-                                    <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
-                                        <Image src="/design-system/components-buttons.png" alt="Buttons" fill className="object-contain" />
-                                    </div>
-                                </CarouselSlide>
-                                <CarouselSlide className="flex-[0_0_80%] md:flex-[0_0_40%] pl-4">
-                                    <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
-                                        <Image src="/design-system/components-inputs.png" alt="Inputs" fill className="object-contain" />
-                                    </div>
-                                </CarouselSlide>
-                                <CarouselSlide className="flex-[0_0_80%] md:flex-[0_0_40%] pl-4">
-                                    <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
-                                        <Image src="/design-system/components-chips.png" alt="Chips" fill className="object-contain" />
-                                    </div>
-                                </CarouselSlide>
-                                <CarouselSlide className="flex-[0_0_80%] md:flex-[0_0_40%] pl-4">
-                                    <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
-                                        <Image src="/design-system/components-cards.png" alt="Cards" fill className="object-contain" />
-                                    </div>
-                                </CarouselSlide>
-                                <CarouselSlide className="flex-[0_0_80%] md:flex-[0_0_40%] pl-4">
-                                    <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
-                                        <Image src="/design-system/components-states.png" alt="States" fill className="object-contain" />
-                                    </div>
-                                </CarouselSlide>
-                                <CarouselSlide className="flex-[0_0_80%] md:flex-[0_0_40%] pl-4">
-                                    <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
-                                        <Image src="/design-system/components-other.png" alt="Other Components" fill className="object-contain" />
-                                    </div>
-                                </CarouselSlide>
+                            <Carousel opts={{ align: 'start', loop: true }} className="w-full">
+                                <CarouselContent className="-ml-4">
+                                    <CarouselItem className="pl-4 basis-[80%] md:basis-[40%]">
+                                        <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
+                                            <Image src="/design-system/components-buttons.png" alt="Buttons" fill className="object-contain" />
+                                        </div>
+                                    </CarouselItem>
+                                    <CarouselItem className="pl-4 basis-[80%] md:basis-[40%]">
+                                        <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
+                                            <Image src="/design-system/components-inputs.png" alt="Inputs" fill className="object-contain" />
+                                        </div>
+                                    </CarouselItem>
+                                    <CarouselItem className="pl-4 basis-[80%] md:basis-[40%]">
+                                        <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
+                                            <Image src="/design-system/components-chips.png" alt="Chips" fill className="object-contain" />
+                                        </div>
+                                    </CarouselItem>
+                                    <CarouselItem className="pl-4 basis-[80%] md:basis-[40%]">
+                                        <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
+                                            <Image src="/design-system/components-cards.png" alt="Cards" fill className="object-contain" />
+                                        </div>
+                                    </CarouselItem>
+                                    <CarouselItem className="pl-4 basis-[80%] md:basis-[40%]">
+                                        <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
+                                            <Image src="/design-system/components-states.png" alt="States" fill className="object-contain" />
+                                        </div>
+                                    </CarouselItem>
+                                    <CarouselItem className="pl-4 basis-[80%] md:basis-[40%]">
+                                        <div className="bg-[#0d1117] rounded-2xl overflow-hidden shadow-md border border-white/10 aspect-[4/3] relative">
+                                            <Image src="/design-system/components-other.png" alt="Other Components" fill className="object-contain" />
+                                        </div>
+                                    </CarouselItem>
+                                </CarouselContent>
+                                <CarouselPrevious />
+                                <CarouselNext />
                             </Carousel>
                         </div>
                     </div>

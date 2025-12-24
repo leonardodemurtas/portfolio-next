@@ -59,8 +59,8 @@ export function ProjectTemplatesCarousel({ slides }: ProjectTemplatesCarouselPro
                                             className="object-contain w-full h-auto"
                                             priority={index === 0}
                                         />
-                                        <div className="absolute bottom-6 left-6 z-20">
-                                            <span className="inline-block px-5 py-2.5 bg-[rgba(255,255,255,0.12)] backdrop-blur-[12px] text-[rgba(226,75,75,1)] text-lg font-medium rounded-full border border-[rgba(230,229,229,0.30)] shadow-lg">
+                                        <div className="absolute bottom-10 left-10 z-20">
+                                            <span className="inline-block px-5 py-2.5 bg-[rgba(255,255,255,0.12)] backdrop-blur-[12px] text-white text-[20px] font-normal leading-[31px] rounded-full border border-[rgba(230,229,229,0.30)] shadow-lg">
                                                 {slide.title}
                                             </span>
                                         </div>
