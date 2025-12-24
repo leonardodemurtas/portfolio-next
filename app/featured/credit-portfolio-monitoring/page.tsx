@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { TemplateCarousel } from "../../components/ui/LegacyTemplateCarousel";
+import { ProjectTemplatesCarousel } from "../../components/ui/ProjectTemplatesCarousel";
 import { Footer } from "../../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -366,7 +366,7 @@ export default function CreditPortfolioMonitoringPage() {
                         Early sketches evolved into flows and mockups, accelerated by the design system. Using real components, we quickly built and refined reusable templates that kept the experience consistent and sped up future feature work.
                     </p>
                 </div>
-                <TemplateCarousel slides={TEMPLATES} />
+                <ProjectTemplatesCarousel slides={TEMPLATES} />
             </section>
 
             {/* 7. Prototypes Section */}

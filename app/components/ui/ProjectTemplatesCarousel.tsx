@@ -37,7 +37,7 @@ export function ProjectTemplatesCarousel({ slides }: ProjectTemplatesCarouselPro
     return (
         <div className="w-full flex flex-col items-center">
              {/* Carousel Content */}
-            <div className="w-full flex justify-center -mt-[112px] pt-14 relative z-10">
+            <div className="w-full flex justify-center overflow-hidden -mt-[112px] pt-14 relative z-10">
                 <div className="w-full px-12 md:px-16 max-w-[1300px]">
                     <Carousel
                         setApi={setApi}
