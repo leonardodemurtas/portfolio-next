@@ -230,7 +230,7 @@ export default function CreditPortfolioMonitoringPage() {
 
                     {/* KPI Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-40 pb-12 px-0 mb-16 w-full max-w-[1200px]">
-                        <KpiTile value="7" label="Time to concept approval" />
+                        <KpiTile value="7 weeks" label="Time to concept approval" />
                         <KpiTile value="+50%" label="Redesign time reduced" />
                         <KpiTile value="3" label="New archetypes" />
                         <KpiTile value="8" label="Use cases validated" />
@@ -302,7 +302,7 @@ export default function CreditPortfolioMonitoringPage() {
                                 <ArchetypeTile
                                     title="Head of business"
                                     description="Oversees portfolio strategy. Defines policies, allocates resources, and monitors high-level performance."
-                                    bgImage="/cpm/HoB.png?v=2"
+                                    bgImage="/cpm/HoB-v2.png"
                                 />
                             </div>
                         </div>
