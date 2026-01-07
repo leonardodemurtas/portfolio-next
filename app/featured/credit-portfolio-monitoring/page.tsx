@@ -250,7 +250,7 @@ export default function CreditPortfolioMonitoringPage() {
             {/* 4. How we unblocked progress (Light theme) */}
             <section className="bg-[var(--background)] pt-14 pb-0">
                 {/* Header */}
-                <div className="max-w-[610px] mx-auto px-6 mb-8">
+                <div className="max-w-[610px] mx-auto mb-8">
                     <h2 className={`${inter.className} text-4xl md:text-[40px] font-medium leading-[56px] text-neutral-900 mb-4`}>
                         How we unblocked progress
                     </h2>
@@ -295,14 +295,14 @@ export default function CreditPortfolioMonitoringPage() {
                                 <ArchetypeTile
                                     title="Portfolio Manager"
                                     description="Manages a pipeline of distressed loans. Balances risk, resources, and time across multiple cases."
-                                    bgImage="/cpm/hero-v2.png"
+                                    bgImage="/cpm/portfolioManager.png"
                                 />
                             </div>
                             <div className="flex-1">
                                 <ArchetypeTile
                                     title="Head of business"
                                     description="Oversees portfolio strategy. Defines policies, allocates resources, and monitors high-level performance."
-                                    bgImage="/cpm/HoB.png"
+                                    bgImage="/cpm/HoB.png?v=2"
                                 />
                             </div>
                         </div>
