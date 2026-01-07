@@ -18,6 +18,15 @@ export const metadata: Metadata = {
   title: "AI Product Designer Portfolio",
   description:
     "AI design systems, decision tools, and patterns for risk & credit.",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-96x96.png", type: "image/png" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon/favicon.ico" },
+    ],
+    apple: "/favicon/apple-touch-icon.png",
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 
