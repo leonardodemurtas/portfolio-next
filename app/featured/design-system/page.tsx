@@ -4,6 +4,17 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { ProjectTemplatesCarousel } from "../../components/ui/ProjectTemplatesCarousel";
 import { Footer } from "../../components/Footer";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Enterprise Design System Case Study",
+    description: "Building a unified design system for 7 products. Reduced design rework by 50% and accelerated development by 70%.",
+    openGraph: {
+        title: "Enterprise Design System - UX Case Study",
+        description: "One system. Many brands. Faster delivery. How we shipped a unified design system for 7 different enterprise tools.",
+        images: [{ url: "/design-system-hero.png" }],
+    },
+};
 
 const inter = Inter({ subsets: ["latin"] });
 
