@@ -1,11 +1,33 @@
 import { featuredProjects } from "../../data/projects";
 import { notFound } from "next/navigation";
 import ReactMarkdown from 'react-markdown';
+import { Metadata } from 'next';
 
 export async function generateStaticParams() {
     return featuredProjects.map((project) => ({
         slug: project.slug,
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const project = featuredProjects.find((p) => p.slug === slug);
+
+    if (!project) {
+        return {
+            title: 'Project Not Found',
+        };
+    }
+
+    return {
+        title: `${project.title} | Case Study`,
+        description: project.cardHeadline || `Case study for ${project.title}`,
+        openGraph: {
+            title: `${project.title} - UX Case Study`,
+            description: project.cardHeadline || `Case study for ${project.title}`,
+            images: project.cardImage ? [{ url: project.cardImage }] : [],
+        },
+    };
 }
 
 export default async function FeaturedProjectPage({

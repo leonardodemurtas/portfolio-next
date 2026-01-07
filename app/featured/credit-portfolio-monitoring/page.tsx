@@ -2,6 +2,17 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { ProjectTemplatesCarousel } from "../../components/ui/ProjectTemplatesCarousel";
 import { Footer } from "../../components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Credit Portfolio Monitoring Case Study",
+    description: "Redesigning a distressed loan monitoring tool. How we used user research to define 3 archetypes and unblock progress for risk teams.",
+    openGraph: {
+        title: "Credit Portfolio Monitoring - UX Case Study",
+        description: "Turning user research into a new concept that unblocked progress for credit risk teams.",
+        images: [{ url: "/cpm/hero-v2.png" }],
+    },
+};
 
 const inter = Inter({ subsets: ["latin"] });
 
