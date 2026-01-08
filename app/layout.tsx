@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -72,6 +72,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+  const host = headers()
+    .get("host")
+    ?.split(":")[0]
+    ?.toLowerCase();
+  const isRealDomain = host === "leonardodemurtas.com";
+  const isVercelProd = process.env.VERCEL_ENV === "production";
+  const shouldLoadGA = isVercelProd && isRealDomain && !!gaId;
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -87,7 +96,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
-        <GoogleAnalytics gaId="G-9P1N4YSR4X" />
+        {shouldLoadGA ? <GoogleAnalytics gaId={gaId} /> : null}
       </body>
     </html>
   );
