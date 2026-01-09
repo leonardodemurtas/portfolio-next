@@ -67,13 +67,14 @@ export const metadata: Metadata = {
 
 import { Header } from "./components/Header";
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  const host = headers()
+  const headerList = await headers();
+  const host = headerList
     .get("host")
     ?.split(":")[0]
     ?.toLowerCase();
