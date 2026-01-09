@@ -6,7 +6,7 @@ import { featuredProjects } from "../data/projects";
 
 export function UseCases() {
     return (
-        <section id="use-cases" className="pt-8 pb-[1px] px-6 md:px-12 max-w-[90rem] mx-auto scroll-mt-20">
+        <section id="use-cases" className="pt-8 pb-12 px-6 md:px-12 max-w-[90rem] mx-auto scroll-mt-20">
             {/* Heading */}
             <div className="flex justify-start mb-12">
                 <h2 className="text-[92px] font-thin text-[#B2B2B2] uppercase leading-normal font-['SF_Pro_Display',_sans-serif]">
